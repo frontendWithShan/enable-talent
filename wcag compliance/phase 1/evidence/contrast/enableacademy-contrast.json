@@ -1,0 +1,3053 @@
+[
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.11.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.0.0 Safari/537.36",
+      "windowWidth": 762,
+      "windowHeight": 428,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-02-18T01:40:32.259Z",
+    "url": "http://localhost:4173/enableacademy",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#fdf6e8",
+                  "contrastRatio": 16.57,
+                  "fontSize": "45.0pt (60px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.57"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1 id=\"academy-hero-title\" class=\"relative z-10 mt-5 text-4xl font-extrabold leading-tight tracking-tight text-slate-900 text-center sm:text-left sm:text-6xl\">Learn. Train. Grow.<br>Get Ready for Opportunity.</h1>",
+            "target": [
+              "#academy-hero-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#fdf6e8",
+                  "contrastRatio": 9.62,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.62"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"relative z-10 mt-6 max-w-xl text-base leading-7 text-slate-700 sm:text-lg\">",
+            "target": [
+              ".max-w-xl"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f1f5f9",
+                  "contrastRatio": 9.45,
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.45"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"inline-flex items-center rounded-full bg-slate-100 px-5 py-2 text-[13px] font-bold uppercase tracking-widest text-slate-700 shadow-sm\">Who We Are</div>",
+            "target": [
+              ".px-5"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "28.5pt (38px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-slate-900\">What Is </span>",
+            "target": [
+              "#academy-about-title > .text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>Enabled Academy is a skill-building and readiness hub that improves access to meaningful jobs.</p>",
+            "target": [
+              ".leading-relaxed > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>We train individuals across different career paths, help them gain confidence, and connect them with employers who need job-ready talent.</p>",
+            "target": [
+              ".leading-relaxed > p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>We work closely with employers to understand their staffing needs and train candidates with the exact skills required for the role.</p>",
+            "target": [
+              ".leading-relaxed > p:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.61,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.61"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"text-sm font-extrabold text-slate-800 text-center leading-tight\">Purpose.<br>Profit.<br>Progress.</p>",
+            "target": [
+              ".leading-tight.text-slate-800.font-extrabold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f1f5f9",
+                  "contrastRatio": 9.45,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.45"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-slate-700 shadow-sm\">For Talent</div>",
+            "target": [
+              ".sm\\:space-y-4.lg\\:pl-6.space-y-6 > .sm\\:justify-start.justify-center.flex > .tracking-\\[0\\.08em\\].bg-slate-100.text-xs"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 17.23,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.23"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"academy-talent-value-title\" class=\"text-[30px] font-bold leading-[1.08] tracking-tight text-slate-900 text-center sm:text-left sm:text-[40px] lg:text-[44px]\">",
+            "target": [
+              "#academy-talent-value-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#6b6b6b",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 5.14,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.14"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"text-[15px] leading-7 text-[#6b6b6b] sm:text-lg max-w-2xl text-center sm:text-left\">",
+            "target": [
+              ".text-\\[\\#6b6b6b\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 17.23,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.23"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-base font-bold text-slate-900 text-center sm:text-left sm:text-lg\">What You'll Receive</h3>",
+            "target": [
+              ".space-y-3 > h3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 14.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.12"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">Role-based industry training</span>",
+            "target": [
+              ".pl-3 > .items-start.gap-3:nth-child(1) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 14.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.12"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">One-on-one coaching &amp; prep</span>",
+            "target": [
+              ".pl-3 > .items-start.gap-3:nth-child(2) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 14.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.12"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">Resume &amp; profile guidance</span>",
+            "target": [
+              ".pl-3 > .items-start.gap-3:nth-child(3) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 14.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.12"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">Workplace readiness training</span>",
+            "target": [
+              ".pl-3 > .items-start.gap-3:nth-child(4) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 14.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.12"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">Accessibility &amp; accommodations</span>",
+            "target": [
+              ".pl-3 > .items-start.gap-3:nth-child(5) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 14.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.12"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">Direct employer connections</span>",
+            "target": [
+              ".pl-3 > .items-start.gap-3:nth-child(6) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#fbfbfb",
+                  "contrastRatio": 14.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.12"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">Supportive success-focused environment</span>",
+            "target": [
+              ".items-start.gap-3:nth-child(7) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "36.0pt (48px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-slate-900\">Your Workforce</span>",
+            "target": [
+              "#academy-support-employers-title > .text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#a45a14",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.18,
+                  "fontSize": "36.0pt (48px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.18"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-[#A45A14]\">Training &amp;</span>",
+            "target": [
+              ".text-\\[\\#A45A14\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#c0412c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 5.2,
+                  "fontSize": "36.0pt (48px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 5.2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-[#C0412C]\">Talent Partner</span>",
+            "target": [
+              ".text-\\[\\#C0412C\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>Enabled Academy helps employers build a stronger and more prepared workforce by training candidates based on real job requirements.</p>",
+            "target": [
+              ".sm\\:space-y-4.text-\\[15px\\].max-w-2xl > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>We support you with a flexible, inclusive, and job-ready talent pipeline.</p>",
+            "target": [
+              ".sm\\:space-y-4.text-\\[15px\\].max-w-2xl > p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-lg font-bold text-slate-900 sm:text-xl text-center sm:text-left\">How We Support Employers</h3>",
+            "target": [
+              ".pt-4 > .sm\\:text-xl.text-lg"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.61,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.61"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">We train them specifically for your roles</span>",
+            "target": [
+              ".text-\\[15px\\].text-slate-800.space-y-3 > .items-start.gap-3:nth-child(1) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.61,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.61"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">We source and identify potential candidates</span>",
+            "target": [
+              ".text-\\[15px\\].text-slate-800.space-y-3 > .items-start.gap-3:nth-child(2) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.61,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.61"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">We provide one-on-one coaching and readiness support</span>",
+            "target": [
+              ".text-\\[15px\\].text-slate-800.space-y-3 > .items-start.gap-3:nth-child(3) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.61,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.61"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">We support inclusive hiring practices across all departments</span>",
+            "target": [
+              ".text-\\[15px\\].text-slate-800.space-y-3 > .items-start.gap-3:nth-child(4) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.61,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.61"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">We reduce onboarding challenges and help improve retention</span>",
+            "target": [
+              ".text-\\[15px\\].text-slate-800.space-y-3 > .items-start.gap-3:nth-child(5) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.61,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.61"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-medium\">We prepare candidates to fully understand your workflows, tools, and expectations</span>",
+            "target": [
+              ".text-\\[15px\\].text-slate-800.space-y-3 > .items-start.gap-3:nth-child(6) > .font-medium"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#57544f",
+                  "bgColor": "#f8e9c3",
+                  "contrastRatio": 6.25,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.25"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Customer Service &amp; Call Centre</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(1) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4e545f",
+                  "bgColor": "#d9e9f8",
+                  "contrastRatio": 6.15,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.15"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">HR &amp; Recruitment</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(2) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#57544f",
+                  "bgColor": "#f8e9c3",
+                  "contrastRatio": 6.25,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.25"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Administrative &amp; Office Support</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(3) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4e545f",
+                  "bgColor": "#d9e9f8",
+                  "contrastRatio": 6.15,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.15"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Operations &amp; Logistics</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(4) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#50535c",
+                  "bgColor": "#e2e6ee",
+                  "contrastRatio": 6.14,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.14"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Data &amp; Digital Roles</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(5) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#57544f",
+                  "bgColor": "#f8e9c3",
+                  "contrastRatio": 6.25,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.25"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Sales &amp; Retail</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(6) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#50535c",
+                  "bgColor": "#e2e6ee",
+                  "contrastRatio": 6.14,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.14"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Business Analyst &amp; Project Coordinator</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(7) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#57544f",
+                  "bgColor": "#f8e9c3",
+                  "contrastRatio": 6.25,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.25"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Marketing &amp; Social Media</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(8) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#57544f",
+                  "bgColor": "#f8e9c3",
+                  "contrastRatio": 6.25,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.25"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">Software &amp; Technical Roles</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(9) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4e545f",
+                  "bgColor": "#d9e9f8",
+                  "contrastRatio": 6.15,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.15"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span style=\"color:rgba(18, 20, 29, 0.7);font-size:16px;line-height:24px;letter-spacing:-0.2px;font-weight:600\">IT Support</span>",
+            "target": [
+              ".px-3.gap-2.py-1\\.5:nth-child(10) > span:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f1f5f9",
+                  "contrastRatio": 9.45,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.45"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-slate-700 shadow-sm\">How Enabled Academy Works</div>",
+            "target": [
+              ".gap-5.flex-col.text-center > .tracking-\\[0\\.08em\\].bg-slate-100.text-xs"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"academy-how-works-title\" class=\"text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[56px]\">A Simple, Clear Process that Supports</h2>",
+            "target": [
+              "#academy-how-works-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-[32px] font-bold text-slate-900\">Understand the Need</h3>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(3) > .space-y-4.sm\\:text-left.text-center > .sm\\:justify-start.items-start.gap-3 > .text-\\[32px\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Employers share their role requirements and timelines.</li>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(3) > .space-y-4.sm\\:text-left.text-center > .space-y-2.leading-7.sm\\:text-lg > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Talents share their career goals and interests.</li>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(3) > .space-y-4.sm\\:text-left.text-center > .space-y-2.leading-7.sm\\:text-lg > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>We align skills, expectations, accessibility needs, and growth paths.</li>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(3) > .space-y-4.sm\\:text-left.text-center > .space-y-2.leading-7.sm\\:text-lg > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-[32px] font-bold text-slate-900\">Train, Coach &amp; Prepare</h3>",
+            "target": [
+              ".lg\\:justify-end.sm\\:justify-start.items-start > .text-\\[32px\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>We train talents based on employer needs.</li>",
+            "target": [
+              ".lg\\:text-right.space-y-2.leading-7 > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>We provide role-specific coaching.</li>",
+            "target": [
+              ".lg\\:text-right.space-y-2.leading-7 > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>We help talents build confidence through practice and support.</li>",
+            "target": [
+              ".lg\\:text-right.space-y-2.leading-7 > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>We focus on soft skills and workplace readiness.</li>",
+            "target": [
+              ".lg\\:text-right.space-y-2.leading-7 > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-[32px] font-bold text-slate-900\">Match &amp; Hire</h3>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(5) > .space-y-4.sm\\:text-left.text-center > .sm\\:justify-start.items-start.gap-3 > .text-\\[32px\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Employers meet trained, pre-screened candidates.</li>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(5) > .space-y-4.sm\\:text-left.text-center > .space-y-2.leading-7.sm\\:text-lg > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>Talents interview with confidence.</li>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(5) > .space-y-4.sm\\:text-left.text-center > .space-y-2.leading-7.sm\\:text-lg > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>We support onboarding to ensure a smooth transition.</li>",
+            "target": [
+              ".lg\\:gap-12.gap-8.lg\\:grid-cols-2:nth-child(5) > .space-y-4.sm\\:text-left.text-center > .space-y-2.leading-7.sm\\:text-lg > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"academy-success-stories-title\" class=\"text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[56px]\"><span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">Success</span> <!-- -->Stories</h2>",
+            "target": [
+              "#academy-success-stories-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f7f7f5",
+                  "contrastRatio": 16.62,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.62"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-lg font-bold text-slate-900\">Leslie Alexander</h3>",
+            "target": [
+              ".space-y-2 > .text-lg"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#f7f7f5",
+                  "contrastRatio": 7.07,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.07"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"text-sm font-semibold text-slate-600\">People Operations Specialist at Clari</p>",
+            "target": [
+              ".space-y-2 > .text-slate-600"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f7f7f5",
+                  "contrastRatio": 9.65,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.65"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"pt-2 text-base leading-7 text-slate-700 sm:text-lg\">Enabled Academy helped me gain the confidence to return to work.</p>",
+            "target": [
+              ".pt-2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f7f7f5",
+                  "contrastRatio": 9.65,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.65"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"flex items-center gap-1 text-sm font-semibold text-slate-700\">",
+            "target": [
+              ".gap-1.font-semibold.text-slate-700"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-[22px] font-extrabold text-slate-900 sm:text-3xl lg:text-[42px]\">Building Infrastructure<br>for meaningful employment</h3>",
+            "target": [
+              ".text-\\[22px\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-[15px] leading-7 text-slate-700 sm:text-base\">Stay informed with cutting-edge AI insights, wellness innovation, and inclusive tech-driven hiring, connecting diverse talent with forward-thinking employers!</p>",
+            "target": [
+              ".sm\\:text-base.text-\\[15px\\].mt-2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 13.52,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 13.52"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-xl font-semibold text-slate-800\">EnabledTalent</span>",
+            "target": [
+              ".text-xl"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Product</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(1) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/fortalents\">For Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"fortalents\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"text-left hover:text-slate-900 hover:underline\" aria-label=\"Career Coach (coming soon)\">Career Coach</button>",
+            "target": [
+              "button[aria-label=\"Career Coach (coming soon)\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/foremployers\">Enabled Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"foremployers\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/foremployers/agent\">Enabled AI Agent</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"agent\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/enableacademy\">Enabled Academy</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enableacademy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/students\">For Educators</a>",
+            "target": [
+              "a[href$=\"students\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"text-left hover:text-slate-900 hover:underline\" aria-label=\"For NGOs (coming soon)\">For NGOs</button>",
+            "target": [
+              "button[aria-label=\"For NGOs (coming soon)\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"text-left hover:text-slate-900 hover:underline\" aria-label=\"For Governments (coming soon)\">For Governments</button>",
+            "target": [
+              "button[aria-label=\"For Governments (coming soon)\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Case Studies</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(2) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"text-left hover:text-slate-900 hover:underline\" aria-label=\"Durham (coming soon)\">Durham</button>",
+            "target": [
+              "button[aria-label=\"Durham (coming soon)\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Countries</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(3) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"https://www.enabledafrica.com/\">EnabledAfrica</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enabledafrica.com/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"text-left hover:text-slate-900 hover:underline\" aria-label=\"Spain (coming soon)\">Spain</button>",
+            "target": [
+              "button[aria-label=\"Spain (coming soon)\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Resources</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(4) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/blogs\">Blog</a>",
+            "target": [
+              "a[href$=\"blogs\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/faqs\">FAQs</a>",
+            "target": [
+              "a[href$=\"faqs\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Company</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(5) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/about-us\">About</a>",
+            "target": [
+              "a[href$=\"about-us\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"text-left hover:text-slate-900 hover:underline\" aria-label=\"Partners (coming soon)\">Partners</button>",
+            "target": [
+              "button[aria-label=\"Partners (coming soon)\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/careers\">Careers</a>",
+            "target": [
+              "a[href$=\"careers\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Legal</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(6) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/privacy-policy\">Privacy Policy</a>",
+            "target": [
+              "a[href$=\"privacy-policy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/accessibility-policy\">Accessibility Policy</a>",
+            "target": [
+              "a[href$=\"accessibility-policy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/responsible-ai\">Responsible AI</a>",
+            "target": [
+              "a[href$=\"responsible-ai\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 7.01,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.01"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 text-right text-xs text-slate-600\">Â© 2026 EnabledTalent. All rights reserved.</p>",
+            "target": [
+              ".text-right"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"bg-gradient-to-r from-[#C0412C] to-[#F4C15D] bg-clip-text text-transparent text-[20px] font-bold uppercase tracking-[0.2em]\">Enabled Academy</span>",
+                    "target": [
+                      ".tracking-\\[0\\.2em\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-gradient-to-r from-[#C0412C] to-[#F4C15D] bg-clip-text text-transparent text-[20px] font-bold uppercase tracking-[0.2em]\">Enabled Academy</span>",
+            "target": [
+              ".tracking-\\[0\\.2em\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      "a[aria-label=\"Sign up as a talent\"] > .from-\\[\\#183457\\].to-\\[\\#0D3541\\].text-white"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>For Talents</span>",
+            "target": [
+              "a[aria-label=\"Sign up as a talent\"] > .from-\\[\\#183457\\].to-\\[\\#0D3541\\].text-white > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      "a[aria-label=\"Sign up as an employer\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].text-black"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>For Employers</span>",
+            "target": [
+              "a[aria-label=\"Sign up as an employer\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].text-black > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "28.5pt (38px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"bg-gradient-to-r from-[#c5523a] via-[#d69245] to-[#e4b85b] bg-clip-text text-transparent\">Enabled Academy?</span>",
+                    "target": [
+                      "#academy-about-title > .from-\\[\\#c5523a\\].via-\\[\\#d69245\\].to-\\[\\#e4b85b\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-gradient-to-r from-[#c5523a] via-[#d69245] to-[#e4b85b] bg-clip-text text-transparent\">Enabled Academy?</span>",
+            "target": [
+              "#academy-about-title > .from-\\[\\#c5523a\\].via-\\[\\#d69245\\].to-\\[\\#e4b85b\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"whitespace-nowrap bg-gradient-to-r from-[#c5523a] via-[#d69245] to-[#e4b85b] bg-clip-text text-transparent\">What Is Enabled Academy?</span>",
+                    "target": [
+                      ".whitespace-nowrap.from-\\[\\#c5523a\\].via-\\[\\#d69245\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"whitespace-nowrap bg-gradient-to-r from-[#c5523a] via-[#d69245] to-[#e4b85b] bg-clip-text text-transparent\">What Is Enabled Academy?</span>",
+            "target": [
+              ".whitespace-nowrap.from-\\[\\#c5523a\\].via-\\[\\#d69245\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.05em] text-white/85 backdrop-blur\">Who We Support</div>",
+            "target": [
+              ".tracking-\\[0\\.05em\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 id=\"academy-who-for-title\" class=\"text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-[56px]\">Who<!-- --> <span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">This Is For</span></h2>",
+            "target": [
+              "#academy-who-for-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">This Is For</span>",
+            "target": [
+              "#academy-who-for-title > .from-\\[\\#d85b3b\\].via-\\[\\#e19a45\\].to-\\[\\#e8c26c\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"max-w-2xl text-base leading-7 text-slate-200 sm:text-lg\">Anyone looking to improve skills, start a career, restart a career, or grow into new opportunities, including students, newcomers, career-changers, and people facing barriers.</p>",
+            "target": [
+              ".text-slate-200"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Join Enabled Academy</span>",
+            "target": [
+              "button[aria-label=\"Join Enabled Academy\"] > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<div class=\"inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-slate-700 shadow-sm\">For Employers</div>",
+            "target": [
+              ".gap-10.lg\\:grid-cols-2.grid > .lg\\:pl-6.space-y-6 > .sm\\:justify-start.justify-center.flex:nth-child(1) > .tracking-\\[0\\.08em\\].bg-slate-100.text-xs"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button aria-label=\"Book a call now\" type=\"button\" class=\"group cursor-pointer...\">",
+                    "target": [
+                      "button[aria-label=\"Book a call now\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Book a Call Now</span>",
+            "target": [
+              "button[aria-label=\"Book a call now\"] > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section aria-labelledby=\"academy-roles-support-title\" class=\"plus_jakarta_sans_1bb1d0e-module__RfU8qq__className bg-gradient-to-r from-[#fff7eb] via-[#fffaf2] to-[#fff7eb] px-4 py-16 sm:py-20 lg:py-24\">",
+                    "target": [
+                      ".plus_jakarta_sans_1bb1d0e-module__RfU8qq__className"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 id=\"academy-roles-support-title\" class=\"text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[56px]\">We Support<!-- --> <span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">All Types of Roles</span></h2>",
+            "target": [
+              "#academy-roles-support-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">All Types of Roles</span>",
+                    "target": [
+                      "#academy-roles-support-title > .from-\\[\\#d85b3b\\].via-\\[\\#e19a45\\].to-\\[\\#e8c26c\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">All Types of Roles</span>",
+            "target": [
+              "#academy-roles-support-title > .from-\\[\\#d85b3b\\].via-\\[\\#e19a45\\].to-\\[\\#e8c26c\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section aria-labelledby=\"academy-roles-support-title\" class=\"plus_jakarta_sans_1bb1d0e-module__RfU8qq__className bg-gradient-to-r from-[#fff7eb] via-[#fffaf2] to-[#fff7eb] px-4 py-16 sm:py-20 lg:py-24\">",
+                    "target": [
+                      ".plus_jakarta_sans_1bb1d0e-module__RfU8qq__className"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-lg font-semibold text-[#c05a2e] sm:text-xl\">...and more — we customize based on your staffing needs.</p>",
+            "target": [
+              ".text-\\[\\#c05a2e\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">Both Talents and Employers.</span>",
+                    "target": [
+                      ".text-2xl > .from-\\[\\#d85b3b\\].via-\\[\\#e19a45\\].to-\\[\\#e8c26c\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">Both Talents and Employers.</span>",
+            "target": [
+              ".text-2xl > .from-\\[\\#d85b3b\\].via-\\[\\#e19a45\\].to-\\[\\#e8c26c\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"bg-gradient-to-r from-[#C0412C] to-[#F4C15D] bg-clip-text text-transparent\">The Result: Job-Ready talent and employers who hire with confidence.</span>",
+                    "target": [
+                      ".sm\\:text-\\[24px\\] > .from-\\[\\#C0412C\\].to-\\[\\#F4C15D\\].bg-clip-text"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-gradient-to-r from-[#C0412C] to-[#F4C15D] bg-clip-text text-transparent\">The Result: Job-Ready talent and employers who hire with confidence.</span>",
+            "target": [
+              ".sm\\:text-\\[24px\\] > .from-\\[\\#C0412C\\].to-\\[\\#F4C15D\\].bg-clip-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">Success</span>",
+                    "target": [
+                      "#academy-success-stories-title > .from-\\[\\#d85b3b\\].via-\\[\\#e19a45\\].to-\\[\\#e8c26c\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-gradient-to-r from-[#d85b3b] via-[#e19a45] to-[#e8c26c] bg-clip-text text-transparent\">Success</span>",
+            "target": [
+              "#academy-success-stories-title > .from-\\[\\#d85b3b\\].via-\\[\\#e19a45\\].to-\\[\\#e8c26c\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button aria-label=\"Read the case study\" type=\"button\" class=\"group cursor-pointer...\">",
+                    "target": [
+                      "button[aria-label=\"Read the case study\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Read the Case Study</span>",
+            "target": [
+              "button[aria-label=\"Read the case study\"] > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"plus_jakarta_sans_2be0035a-module__xob7vq__className bg-white px-4 pb-20 pt-16 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      ".plus_jakarta_sans_2be0035a-module__xob7vq__className"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"text-3xl font-extrabold text-slate-900 sm:text-4xl lg:text-[56px]\">Start Your Journey With<br class=\"hidden sm:block\"><span class=\"text-slate-900\"> Enabled Academy</span></h2>",
+            "target": [
+              ".plus_jakarta_sans_2be0035a-module__xob7vq__className > .gap-10.max-w-6xl.mx-auto > .text-3xl.sm\\:text-4xl.lg\\:text-\\[56px\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"plus_jakarta_sans_2be0035a-module__xob7vq__className bg-white px-4 pb-20 pt-16 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      ".plus_jakarta_sans_2be0035a-module__xob7vq__className"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-slate-900\"> Enabled Academy</span>",
+            "target": [
+              ".text-3xl.sm\\:text-4xl.lg\\:text-\\[56px\\] > .text-slate-900"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"plus_jakarta_sans_2be0035a-module__xob7vq__className bg-white px-4 pb-20 pt-16 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      ".plus_jakarta_sans_2be0035a-module__xob7vq__className"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"max-w-2xl text-base leading-7 text-slate-600 sm:text-lg lg:text-[20px]\">Whether you're looking to grow your skills or build your team, Enabled Academy is here to help.</p>",
+            "target": [
+              ".lg\\:text-\\[20px\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      "a[aria-label=\"Join as a talent\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].text-black"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Join as a Talent</span>",
+            "target": [
+              "a[aria-label=\"Join as a talent\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].text-black > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      "a[aria-label=\"Partner as an employer\"] > .from-\\[\\#183457\\].to-\\[\\#0D3541\\].text-white"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Partner as an Employer</span>",
+            "target": [
+              "a[aria-label=\"Partner as an employer\"] > .from-\\[\\#183457\\].to-\\[\\#0D3541\\].text-white > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  }
+]

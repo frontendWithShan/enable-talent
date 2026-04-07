@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTO Approval Brief - Web Platform Modernization</title>
+  <style>
+    @page {
+      margin: 15mm;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    :root {
+      --color-primary: #1a1a2e;
+      --color-accent: #0f62fe;
+      --color-accent-light: #e8f0fe;
+      --color-text: #1e293b;
+      --color-text-secondary: #64748b;
+      --color-border: #e2e8f0;
+      --color-bg-subtle: #f8fafc;
+      --color-success: #16a34a;
+      --color-warning: #d97706;
+      --color-risk: #dc2626;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--color-text);
+      line-height: 1.7;
+      font-size: 14px;
+      background: #fff;
+    }
+
+    @media print {
+      body { font-size: 12px; }
+      .page-break { page-break-before: always; }
+      .no-print { display: none; }
+    }
+
+    .document {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 56px;
+    }
+
+    /* Header */
+    .doc-header {
+      border-bottom: 3px solid var(--color-primary);
+      padding-bottom: 32px;
+      margin-bottom: 40px;
+    }
+
+    .doc-header .label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 8px;
+    }
+
+    .doc-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--color-primary);
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .doc-header h2 {
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--color-text-secondary);
+      margin-bottom: 20px;
+    }
+
+    .doc-meta {
+      display: flex;
+      gap: 32px;
+      font-size: 13px;
+      color: var(--color-text-secondary);
+    }
+
+    .doc-meta strong {
+      color: var(--color-text);
+      font-weight: 600;
+    }
+
+    .status-badge {
+      display: inline-block;
+      background: var(--color-accent);
+      color: #fff;
+      padding: 3px 12px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--color-border);
+      margin-bottom: 16px;
+    }
+
+    .section p {
+      margin-bottom: 12px;
+      color: var(--color-text);
+    }
+
+    .section ul {
+      margin: 8px 0 16px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .section ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 6px;
+    }
+
+    .section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+
+    /* Stack highlight */
+    .stack-list {
+      background: var(--color-bg-subtle);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 12px 0 16px 0;
+    }
+
+    .stack-list ul li::before {
+      background: var(--color-success);
+    }
+
+    .stack-item-name {
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    /* Tables */
+    .arch-table,
+    .role-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px 0;
+      font-size: 13px;
+    }
+
+    .arch-table thead th,
+    .role-table thead th {
+      background: var(--color-primary);
+      color: #fff;
+      padding: 10px 16px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .arch-table thead th:first-child,
+    .role-table thead th:first-child {
+      border-radius: 6px 0 0 0;
+    }
+
+    .arch-table thead th:last-child,
+    .role-table thead th:last-child {
+      border-radius: 0 6px 0 0;
+    }
+
+    .arch-table tbody td,
+    .role-table tbody td {
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .arch-table tbody tr:nth-child(even),
+    .role-table tbody tr:nth-child(even) {
+      background: var(--color-bg-subtle);
+    }
+
+    .arch-table tbody tr:last-child td:first-child,
+    .role-table tbody tr:last-child td:first-child {
+      border-radius: 0 0 0 6px;
+    }
+
+    .arch-table tbody tr:last-child td:last-child,
+    .role-table tbody tr:last-child td:last-child {
+      border-radius: 0 0 6px 0;
+    }
+
+    .today-col {
+      color: var(--color-text-secondary);
+    }
+
+    .tomorrow-col {
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .role-name {
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    /* Phase Cards */
+    .phases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 12px 0 16px 0;
+    }
+
+    .phase-card {
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      position: relative;
+      background: #fff;
+    }
+
+    .phase-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .phase-card.phase-1::before { background: #0f62fe; }
+    .phase-card.phase-2::before { background: #8b5cf6; }
+    .phase-card.phase-3::before { background: #d97706; }
+    .phase-card.phase-4::before { background: #16a34a; }
+
+    .phase-card .phase-number {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .phase-1 .phase-number { color: #0f62fe; }
+    .phase-2 .phase-number { color: #8b5cf6; }
+    .phase-3 .phase-number { color: #d97706; }
+    .phase-4 .phase-number { color: #16a34a; }
+
+    .phase-card h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 10px;
+    }
+
+    .phase-card ul {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .phase-card ul li {
+      font-size: 12.5px;
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 4px;
+      line-height: 1.5;
+    }
+
+    .phase-card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--color-text-secondary);
+    }
+
+    /* Sub-items inside phase cards */
+    .phase-card ul ul {
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-left: 12px;
+    }
+
+    .phase-card ul ul li {
+      font-size: 11.5px;
+      color: var(--color-text-secondary);
+    }
+
+    .phase-card ul ul li::before {
+      width: 4px;
+      height: 4px;
+      top: 7px;
+      background: var(--color-border);
+      border: 1px solid var(--color-text-secondary);
+    }
+
+    /* Role table note */
+    .role-note {
+      font-size: 12.5px;
+      color: var(--color-text-secondary);
+      margin-top: 8px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* Risk Cards */
+    .risk-card {
+      border-left: 4px solid var(--color-risk);
+      background: #fef2f2;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+
+    .risk-card h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-risk);
+      margin-bottom: 6px;
+    }
+
+    .risk-card p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .risk-card .mitigation {
+      font-size: 12.5px;
+      color: var(--color-text-secondary);
+    }
+
+    .risk-card .mitigation strong {
+      color: var(--color-success);
+      font-weight: 600;
+    }
+
+    .risk-card .mitigation ul {
+      margin: 4px 0 0 0;
+    }
+
+    .risk-card .mitigation ul li::before {
+      background: var(--color-success);
+    }
+
+    /* Approval Box */
+    .approval-box {
+      border: 2px solid var(--color-accent);
+      border-radius: 10px;
+      padding: 28px;
+      margin: 24px 0;
+      background: var(--color-accent-light);
+    }
+
+    .approval-box h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-accent);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .approval-item {
+      margin-bottom: 14px;
+    }
+
+    .approval-item .number {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: var(--color-accent);
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 24px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    .approval-item .content {
+      display: inline-block;
+      width: calc(100% - 44px);
+      vertical-align: top;
+    }
+
+    .approval-item .content strong {
+      display: block;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 2px;
+    }
+
+    .approval-item .content span {
+      font-size: 13px;
+      color: var(--color-text-secondary);
+    }
+
+    /* Success Criteria */
+    .criteria-list {
+      margin: 12px 0;
+    }
+
+    .criteria-list li {
+      padding: 8px 0 8px 28px !important;
+      border-bottom: 1px solid var(--color-border);
+      position: relative;
+    }
+
+    .criteria-list li:last-child {
+      border-bottom: none;
+    }
+
+    .criteria-list li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 18px;
+      height: 18px;
+      background: var(--color-success);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 10px;
+      line-height: 18px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    /* Out of Scope */
+    .out-of-scope ul li::before {
+      background: var(--color-text-secondary);
+    }
+
+    /* Recommendation */
+    .recommendation {
+      background: var(--color-primary);
+      color: #fff;
+      border-radius: 10px;
+      padding: 28px;
+      margin-top: 32px;
+    }
+
+    .recommendation h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      color: #94a3b8;
+    }
+
+    .recommendation p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #e2e8f0;
+    }
+
+    /* Signature Area */
+    .signature-area {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--color-border);
+      display: flex;
+      gap: 80px;
+    }
+
+    .signature-block {
+      flex: 1;
+    }
+
+    .signature-block .sig-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-text-secondary);
+      margin-bottom: 40px;
+    }
+
+    .signature-block .sig-line {
+      border-top: 1px solid var(--color-text);
+      padding-top: 8px;
+      font-size: 12px;
+      color: var(--color-text-secondary);
+    }
+
+    /* Confidential Footer */
+    .doc-footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--color-border);
+      text-align: center;
+      font-size: 11px;
+      color: var(--color-text-secondary);
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="document">
+
+    <!-- HEADER -->
+    <header class="doc-header">
+      <div class="label">Enabled Talent &mdash; Internal</div>
+      <h1>CTO Approval Brief</h1>
+      <h2>Web Platform Modernization</h2>
+      <div class="doc-meta">
+        <div><strong>Prepared for:</strong> CTO</div>
+        <div><strong>Date:</strong> March 31, 2026</div>
+        <div><strong>Status:</strong> <span class="status-badge">For Approval</span></div>
+      </div>
+    </header>
+
+    <!-- WHAT THIS DOCUMENT IS -->
+    <div class="section">
+      <h3 class="section-title">What This Document Is</h3>
+      <p>This document requests approval to evolve the current website codebase from a marketing-heavy frontend into a fullstack web platform layer that supports:</p>
+      <ul>
+        <li>Structured content management</li>
+        <li>Internal careers and applicant tracking workflows</li>
+        <li>Secure admin operations</li>
+        <li>Future tenant-aware knowledge experiences</li>
+        <li>Future company-specific chatbot workflows</li>
+      </ul>
+      <p>This is not a replacement for the core product platform evolution plan. It is the web experience and content operations layer that will sit beside it.</p>
+    </div>
+
+    <!-- WHAT WE ARE APPROVING -->
+    <div class="section">
+      <h3 class="section-title">What We Are Approving</h3>
+      <p>We are approving a phased modernization of this repository around:</p>
+      <div class="stack-list">
+        <ul>
+          <li><span class="stack-item-name">Next.js 16</span> App Router</li>
+          <li><span class="stack-item-name">Supabase</span> for auth, Postgres, storage, and row-level access control</li>
+          <li><span class="stack-item-name">Tiptap</span> OSS core for Medium-style editorial authoring</li>
+          <li><span class="stack-item-name">OpenAI Responses API</span> for later retrieval-grounded chatbot workflows</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- WHY THIS WORK IS NEEDED -->
+    <div class="section">
+      <h3 class="section-title">Why This Work Is Needed</h3>
+      <p>The current repository is increasingly carrying product-like responsibilities, but it still behaves like a static or semi-static marketing site.</p>
+      <p><strong>Current pain points:</strong></p>
+      <ul>
+        <li>Content management is limited and inconsistent</li>
+        <li>Admin auth is not production-grade</li>
+        <li>Blog and careers workflows are not modeled as durable platform features</li>
+        <li>Data and content operations are fragmented</li>
+        <li>The codebase has no clean path to knowledge ingestion or grounded chat</li>
+      </ul>
+    </div>
+
+    <!-- THE STRATEGIC INTENT -->
+    <div class="section">
+      <h3 class="section-title">The Strategic Intent</h3>
+      <p>This work aligns with the broader company direction of moving away from a simple marketplace presentation layer and toward a configurable infrastructure experience.</p>
+      <p>For this repository, that means:</p>
+      <ul>
+        <li>Making the web layer operationally real</li>
+        <li>Treating content and careers as managed system data</li>
+        <li>Preparing for tenant-aware experiences without overloading this phase</li>
+        <li>Separating platform capability from one-off page implementations</li>
+      </ul>
+    </div>
+
+    <!-- THE ARCHITECTURAL SHIFT -->
+    <div class="section">
+      <h3 class="section-title">The Architectural Shift</h3>
+      <table class="arch-table">
+        <thead>
+          <tr>
+            <th>Today</th>
+            <th>Tomorrow</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="today-col">Marketing-heavy frontend</td>
+            <td class="tomorrow-col">Fullstack web platform layer</td>
+          </tr>
+          <tr>
+            <td class="today-col">Ad hoc admin workflows</td>
+            <td class="tomorrow-col">Secure authenticated admin workflows</td>
+          </tr>
+          <tr>
+            <td class="today-col">Limited content editing</td>
+            <td class="tomorrow-col">Structured editorial publishing</td>
+          </tr>
+          <tr>
+            <td class="today-col">Form submissions as isolated utilities</td>
+            <td class="tomorrow-col">Unified operational data model</td>
+          </tr>
+          <tr>
+            <td class="today-col">No document knowledge layer</td>
+            <td class="tomorrow-col">Knowledge-ready document pipeline</td>
+          </tr>
+          <tr>
+            <td class="today-col">Generic website support potential</td>
+            <td class="tomorrow-col">Future tenant-aware assistant support</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- WHAT WILL BE BUILT -->
+    <div class="section">
+      <h3 class="section-title">What Will Be Built</h3>
+      <div class="phases">
+
+        <!-- Phase 1 -->
+        <div class="phase-card phase-1">
+          <div class="phase-number">Phase 1</div>
+          <h4>Platform Foundation</h4>
+          <ul>
+            <li>Supabase auth and role-based admin access</li>
+            <li>Core relational schema for content, career postings, applications, inquiries, and media</li>
+            <li>Storage buckets for blog images, resumes, and assets</li>
+            <li>Replacement of fragile admin patterns with server-side controlled workflows</li>
+            <li>Role-based access model (see table below)</li>
+          </ul>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-card phase-2">
+          <div class="phase-number">Phase 2</div>
+          <h4>Content and Careers Operations</h4>
+          <ul>
+            <li>Tiptap-based article editor with draft and publish workflow</li>
+            <li>Blog CMS supporting two content types:
+              <ul>
+                <li>Articles &mdash; full posts authored internally using the Tiptap editor</li>
+                <li>External links &mdash; curated third-party content (press mentions, partner articles) that appear in the blog grid but open the original source in a new tab</li>
+              </ul>
+            </li>
+            <li>Careers CMS for internal career postings</li>
+            <li>Inquiry and submission management</li>
+            <li>Redesigned public blog and careers experiences on live data</li>
+            <li>Guest writers can create drafts only; an editor or super admin must review and publish</li>
+          </ul>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-card phase-3">
+          <div class="phase-number">Phase 3</div>
+          <h4>Knowledge Readiness</h4>
+          <ul>
+            <li>Company document upload</li>
+            <li>Parsing, chunking, and embedding pipeline</li>
+            <li>Tenant-aware knowledge document model</li>
+            <li>Retrieval-ready storage for future assistants</li>
+          </ul>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="phase-card phase-4">
+          <div class="phase-number">Phase 4</div>
+          <h4>Tenant-Aware Assistant Layer</h4>
+          <ul>
+            <li>Grounded chatbot using approved documents</li>
+            <li>Company-specific retrieval scopes</li>
+            <li>Citation-first answer strategy</li>
+            <li>Escalation to human support when confidence is low</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ROLE-BASED ACCESS MODEL -->
+      <h4 style="font-size: 14px; font-weight: 600; color: var(--color-primary); margin: 24px 0 12px 0;">Phase 1 &mdash; Role-Based Access Model</h4>
+      <table class="role-table">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Blog</th>
+            <th>Careers</th>
+            <th>Admin Panel</th>
+            <th>User Management</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="role-name">Super Admin</td>
+            <td>Full CRUD, publish and unpublish</td>
+            <td>Full CRUD</td>
+            <td>Full access</td>
+            <td>Can invite and remove all roles</td>
+          </tr>
+          <tr>
+            <td class="role-name">Editor</td>
+            <td>Full CRUD, publish</td>
+            <td>View only</td>
+            <td>Blog section only</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td class="role-name">Guest Writer</td>
+            <td>Draft only, cannot publish</td>
+            <td>No access</td>
+            <td>Own drafts only</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="role-note">Super Admin invites users via email. Role assignment is enforced at the database level through Supabase Row-Level Security policies. Editors carry a team tag (e.g. marketing, engineering) for content attribution, but share the same permission set.</p>
+    </div>
+
+    <!-- WHAT THIS WORK DOES NOT DO -->
+    <div class="section out-of-scope">
+      <h3 class="section-title">What This Work Explicitly Does Not Do</h3>
+      <p>This proposal does not attempt to replace the main product engineering roadmap.</p>
+      <p><strong>Out of scope:</strong></p>
+      <ul>
+        <li>Rewriting the core product backend</li>
+        <li>Redefining the company-wide auth strategy for the main platform</li>
+        <li>Rebuilding all tenant portal flows in this repository</li>
+        <li>Implementing full institutional white-label delivery in this phase</li>
+        <li>Shipping a company-specific chatbot before the knowledge pipeline is stable</li>
+      </ul>
+    </div>
+
+    <!-- DESIGN PRINCIPLES -->
+    <div class="section">
+      <h3 class="section-title">Design Principles</h3>
+      <p>The implementation should follow these principles:</p>
+      <ul>
+        <li>Tenant awareness without unnecessary early complexity</li>
+        <li>Secure defaults for auth, storage, and content access</li>
+        <li>One reusable operational model instead of many page-level exceptions</li>
+        <li>Editorial quality equal to modern B2B publishing tools</li>
+        <li>Phased delivery so value is created before advanced AI layers are added</li>
+      </ul>
+    </div>
+
+    <!-- EXPECTED OUTCOMES -->
+    <div class="section">
+      <h3 class="section-title">Expected Outcomes</h3>
+      <p>At the end of the approved scope, this repository should provide:</p>
+      <ul>
+        <li>A real admin layer instead of a pseudo-admin surface</li>
+        <li>Structured publishing and content operations</li>
+        <li>Durable careers and inquiry workflows</li>
+        <li>A stronger public-facing product and content surface</li>
+        <li>A clean base for later tenant-scoped knowledge and assistant features</li>
+      </ul>
+    </div>
+
+    <!-- KEY RISKS -->
+    <div class="section">
+      <h3 class="section-title">Key Risks</h3>
+
+      <div class="risk-card">
+        <h4>Risk 1 &mdash; Scope Creep</h4>
+        <p>There is a risk that this work tries to solve both the website modernization and the core platform transformation at the same time.</p>
+        <div class="mitigation">
+          <strong>Mitigation:</strong>
+          <ul>
+            <li>Keep this proposal scoped to the web experience layer</li>
+            <li>Treat tenant-aware knowledge and chat as later phases</li>
+            <li>Keep the main product platform plan separate</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <h4>Risk 2 &mdash; Auth and Data Fragmentation</h4>
+        <p>If the web layer evolves with no clean operational model, the result will be more fragmented systems rather than fewer.</p>
+        <div class="mitigation">
+          <strong>Mitigation:</strong>
+          <ul>
+            <li>Centralize auth, storage, and content workflows</li>
+            <li>Use one shared schema and role model for this repository</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <h4>Risk 3 &mdash; AI Before Data Readiness</h4>
+        <p>A chatbot added before content quality, permissions, and document grounding are stable will create poor answers and operational risk.</p>
+        <div class="mitigation">
+          <strong>Mitigation:</strong>
+          <ul>
+            <li>Phase AI after the content and knowledge base are stable</li>
+            <li>Use retrieval grounding rather than generic responses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPROVAL REQUEST -->
+    <div class="approval-box">
+      <h3>Approval Request</h3>
+
+      <div class="approval-item">
+        <span class="number">1</span>
+        <div class="content">
+          <strong>The Scope Boundary</strong>
+          <span>This repository will be modernized as a web platform layer, not as a total replacement for the main product platform.</span>
+        </div>
+      </div>
+
+      <div class="approval-item">
+        <span class="number">2</span>
+        <div class="content">
+          <strong>The Stack</strong>
+          <span>Approve Next.js + Supabase + Tiptap + OpenAI for this repository's modernization path.</span>
+        </div>
+      </div>
+
+      <div class="approval-item">
+        <span class="number">3</span>
+        <div class="content">
+          <strong>The Phased Sequence</strong>
+          <span>Approve foundation first, then CMS and workflows, then knowledge ingestion, then chatbot.</span>
+        </div>
+      </div>
+
+      <div class="approval-item">
+        <span class="number">4</span>
+        <div class="content">
+          <strong>The Operating Principle</strong>
+          <span>Treat this codebase as a reusable web experience platform, not only as a set of marketing pages.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUCCESS CRITERIA -->
+    <div class="section">
+      <h3 class="section-title">Success Criteria</h3>
+      <p>This proposal should be considered successful if it delivers:</p>
+      <ul class="criteria-list">
+        <li>Secure admin access</li>
+        <li>Live content and careers management</li>
+        <li>A publishable article workflow</li>
+        <li>Operational inquiry handling</li>
+        <li>A knowledge-ready architecture for future assistant use</li>
+      </ul>
+    </div>
+
+    <!-- RECOMMENDED DECISION -->
+    <div class="recommendation">
+      <h3>Recommended Decision</h3>
+      <p>Approve the modernization of this repository as a phased web platform program, with immediate focus on auth, data model, CMS, and operations, while deferring tenant-specific assistant behavior until the knowledge layer is ready.</p>
+    </div>
+
+    <!-- SIGNATURE AREA -->
+    <div class="signature-area">
+      <div class="signature-block">
+        <div class="sig-label">Approved By</div>
+        <div class="sig-line">CTO &nbsp;&middot;&nbsp; Date: _______________</div>
+      </div>
+      <div class="signature-block">
+        <div class="sig-label">Prepared By</div>
+        <div class="sig-line">Engineering &nbsp;&middot;&nbsp; Date: March 31, 2026</div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="doc-footer">
+      CONFIDENTIAL &mdash; ENABLED TALENT INTERNAL USE ONLY
+    </div>
+
+  </div>
+</body>
+</html>

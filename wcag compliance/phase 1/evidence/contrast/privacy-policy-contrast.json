@@ -1,0 +1,5280 @@
+[
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.11.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.0.0 Safari/537.36",
+      "windowWidth": 762,
+      "windowHeight": 428,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-02-18T01:00:45.285Z",
+    "url": "http://localhost:4173/privacy-policy",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-1-purpose-and-scope\">1. Purpose and Scope</a>",
+            "target": [
+              "a[href=\"#section-1-purpose-and-scope\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-2-legal-compliance-framework\">2. Legal Compliance Framework</a>",
+            "target": [
+              "aside > .space-y-3 > li:nth-child(2) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-3-collection-of-personal-information\">3. Collection of Personal Information</a>",
+            "target": [
+              "aside > .space-y-3 > li:nth-child(3) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-4-use-of-personal-information\">4. Use of Personal Information</a>",
+            "target": [
+              "li:nth-child(4) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-5-sensitive-personal-information\">5. Sensitive Personal Information</a>",
+            "target": [
+              "li:nth-child(5) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-6-artificial-intelligence-and-automated-processing\">6. Artificial Intelligence and Automated Processing</a>",
+            "target": [
+              "li:nth-child(6) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-7-legal-basis-for-processing\">7. Legal Basis for Processing</a>",
+            "target": [
+              "li:nth-child(7) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-8-disclosure-of-personal-information\">8. Disclosure of Personal Information</a>",
+            "target": [
+              "li:nth-child(8) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-9-employer-obligations\">9. Employer Obligations</a>",
+            "target": [
+              "li:nth-child(9) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-10-cross-border-data-transfers\">10. Cross-Border Data Transfers</a>",
+            "target": [
+              "li:nth-child(10) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-11-data-retention\">11. Data Retention</a>",
+            "target": [
+              "a[href=\"#section-11-data-retention\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-12-security-measures\">12. Security Measures</a>",
+            "target": [
+              "a[href=\"#section-12-security-measures\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-13-user-rights\">13. User Rights</a>",
+            "target": [
+              "a[href$=\"#section-13-user-rights\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-14-cookies-and-tracking-technologies\">14. Cookies and Tracking Technologies</a>",
+            "target": [
+              "li:nth-child(14) > .text-slate-600.hover\\:text-slate-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-15-minors\">15. Minors</a>",
+            "target": [
+              "a[href$=\"#section-15-minors\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-16-amendments\">16. Amendments</a>",
+            "target": [
+              "a[href$=\"#section-16-amendments\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-2\">Section 2: AI Transparency Notice</a>",
+            "target": [
+              "a[href$=\"#section-2\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"text-slate-600 hover:text-slate-900\" href=\"#section-3\">Section 3: Regulatory Readiness Memorandum</a>",
+            "target": [
+              "a[href$=\"#section-3\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "41.3pt (55px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1 class=\"text-[55px] font-semibold leading-tight text-slate-900\">Privacy Policy</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-6 text-[18px] font-semibold text-slate-700\">Effective Date: <!-- -->January 27, 2026</p>",
+            "target": [
+              ".text-\\[18px\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-6 text-base font-bold uppercase tracking-tight text-slate-900\">PRIVACY POLICY, AI TRANSPARENCY NOTICE &amp; REGULATORY READINESS MEMORANDUM</p>",
+            "target": [
+              ".tracking-tight"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-1 text-base text-slate-700\">Legal Entity: ENABLED HR LABS INC.</p>",
+            "target": [
+              ".mt-1.text-slate-700:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 10.35,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.35"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-1 text-base text-slate-700\">Operating Name: Enabled Talent</p>",
+            "target": [
+              ".mt-1.text-slate-700:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-12 mb-2 ml-0 text-[20px] font-bold text-slate-900\">NOTICE</p>",
+            "target": [
+              ".text-\\[20px\\].ml-0.mt-12:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 ml-0 text-base leading-relaxed sm:text-lg \">",
+            "target": [
+              ".mt-4.ml-0.leading-relaxed:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 ml-0 text-base leading-relaxed sm:text-lg \">By accessing or using the Platform, all users acknowledge that they have read, understood, and agreed to the practices described herein.</p>",
+            "target": [
+              ".mt-4.ml-0.leading-relaxed:nth-child(7)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p id=\"section-1\" class=\"scroll-mt-28 mt-14 text-[30px] font-bold uppercase tracking-wide text-slate-900\">SECTION 1: PRIVACY POLICY</p>",
+            "target": [
+              "#section-1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-1-purpose-and-scope\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">1<!-- -->.</span> <!-- -->Purpose and Scope</h3>",
+            "target": [
+              "#section-1-purpose-and-scope"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">1<!-- -->.</span>",
+            "target": [
+              "#section-1-purpose-and-scope > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">This Privacy Policy governs the collection, use, disclosure, retention, and safeguarding of personal information obtained through the operation of the Platform.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(12)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">This Policy applies to all individuals and entities accessing or using the Platform, including job seekers, employers, institutional partners, representatives, and website visitors (“Users”).</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(13)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">The Company is committed to protecting privacy, dignity, and autonomy in all information-handling practices.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(14)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-2-legal-compliance-framework\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">2<!-- -->.</span> <!-- -->Legal Compliance Framework</h3>",
+            "target": [
+              "#section-2-legal-compliance-framework"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">2<!-- -->.</span>",
+            "target": [
+              "#section-2-legal-compliance-framework > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(17)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(18)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-3-collection-of-personal-information\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">3<!-- -->.</span> <!-- -->Collection of Personal Information</h3>",
+            "target": [
+              "#section-3-collection-of-personal-information"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">3<!-- -->.</span>",
+            "target": [
+              "#section-3-collection-of-personal-information > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">The Company collects only personal information that is reasonably necessary to operate the Platform, deliver services, meet legal obligations, and improve system performance.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(21)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 mb-3 ml-32 text-[20px] font-semibold text-slate-900\">3.1 Information Provided by Users</p>",
+            "target": [
+              ".text-\\[20px\\].mt-4.mb-3:nth-child(22)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">The Company may collect:</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(23)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) Identity and contact information, including name, email address, telephone number, mailing address, and optional profile image;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(24)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) Account information, including login credentials, preferences, and user role classification;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(25)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) Professional information, including résumés, education history, employment history, skills, certifications, and career preferences;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(26)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) Accessibility or accommodation information, where voluntarily disclosed;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(27)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(e) Employer information, including organization details, job postings, hiring preferences, interview records, and compensation information;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(28)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(f) Billing and transaction information processed through secure third-party payment service providers.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(29)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-32 text-base leading-relaxed sm:text-lg \">Disclosure of disability-related or accommodation information is strictly voluntary and may be withdrawn at any time.</p>",
+            "target": [
+              ".ml-32.mt-3.leading-relaxed:nth-child(30)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 mb-3 ml-32 text-[20px] font-semibold text-slate-900\">3.2 Automatically Collected Information</p>",
+            "target": [
+              ".text-\\[20px\\].mt-4.mb-3:nth-child(32)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">When Users interact with the Platform, the Company automatically collects:</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(33)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) IP address and approximate location;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(34)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) device type, browser type, and operating system;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(35)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) usage activity, interaction logs, and session data;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(36)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) cookies and similar tracking technologies.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(37)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-32 text-base leading-relaxed sm:text-lg \">This information is used for system security, fraud prevention, analytics, performance optimization, and accessibility improvements.</p>",
+            "target": [
+              ".ml-32.mt-3.leading-relaxed:nth-child(38)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 mb-3 ml-32 text-[20px] font-semibold text-slate-900\">3.3 Information from Third Parties</p>",
+            "target": [
+              ".text-\\[20px\\].mt-4.mb-3:nth-child(40)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">The Company may receive limited personal information from:</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(41)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) authentication or identity-verification services;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(42)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) analytics, communication, and cloud service providers;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(43)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) authorized employer or institutional partners.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(44)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-4-use-of-personal-information\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">4<!-- -->.</span> <!-- -->Use of Personal Information</h3>",
+            "target": [
+              "#section-4-use-of-personal-information"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">4<!-- -->.</span>",
+            "target": [
+              "#section-4-use-of-personal-information > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">The Company uses personal information to:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(47)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) operate and maintain the Platform;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(48)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) create and manage user accounts;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(49)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) facilitate recruitment and job application processes;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(50)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) match job seekers with employment opportunities;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(51)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(e) deliver accessibility and accommodation features;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(52)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(f) personalize user experience;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(53)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(g) communicate service-related notices;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(54)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(h) prevent fraud, misuse, or security incidents;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(55)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(i) conduct analytics and improve system performance; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(56)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(j) comply with legal and regulatory obligations.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(57)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg\">The Company does not sell or rent personal information.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(58)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-5-sensitive-personal-information\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">5<!-- -->.</span> <!-- -->Sensitive Personal Information</h3>",
+            "target": [
+              "#section-5-sensitive-personal-information"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">5<!-- -->.</span>",
+            "target": [
+              "#section-5-sensitive-personal-information > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">Disability-related, health-related, and accommodation-related information is treated as sensitive personal information.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(61)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">The Company:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(62)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) collects such information only where voluntarily provided;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(63)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) uses such information solely to support accessibility and accommodation services;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(64)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) restricts access to authorized personnel on a need-to-know basis; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(65)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) applies enhanced technical and organizational safeguards.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(66)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">Withdrawal of such information does not affect access to core Platform services.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(67)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-6-artificial-intelligence-and-automated-processing\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">6<!-- -->.</span> <!-- -->Artificial Intelligence and Automated Processing</h3>",
+            "target": [
+              "#section-6-artificial-intelligence-and-automated-processing"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">6<!-- -->.</span>",
+            "target": [
+              "#section-6-artificial-intelligence-and-automated-processing > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">The Company employs artificial intelligence and statistical models to support:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(70)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) job matching and candidate recommendations;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(71)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) résumé parsing and skill identification;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(72)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) accessibility optimization; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(73)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) system performance enhancement.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(74)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">Safeguards</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(75)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) AI systems assist but do not make final hiring or rejection decisions;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(76)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) all recruitment decisions remain under human authority;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(77)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) AI outputs are subject to human review;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(78)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) sensitive disability or health information is not used for hiring decisions;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(79)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(e) Users may request information regarding AI-assisted processing affecting them.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(80)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-7-legal-basis-for-processing\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">7<!-- -->.</span> <!-- -->Legal Basis for Processing</h3>",
+            "target": [
+              "#section-7-legal-basis-for-processing"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">7<!-- -->.</span>",
+            "target": [
+              "#section-7-legal-basis-for-processing > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">Personal information is processed on the basis of:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(83)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) User consent;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(84)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) performance of a contract;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(85)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) legitimate business interests; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(86)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) compliance with legal or regulatory obligations.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(87)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">Users may withdraw consent at any time, subject to legal or contractual restrictions.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(88)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-8-disclosure-of-personal-information\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">8<!-- -->.</span> <!-- -->Disclosure of Personal Information</h3>",
+            "target": [
+              "#section-8-disclosure-of-personal-information"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">8<!-- -->.</span>",
+            "target": [
+              "#section-8-disclosure-of-personal-information > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">The Company may disclose personal information:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(91)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) to employers where Users apply to positions or share profiles;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(92)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) to service providers supporting Platform operations;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(93)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) to affiliated corporate entities for internal operations;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(94)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) where required by law or court order; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(95)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(e) in connection with corporate restructuring, merger, or sale of assets.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(96)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">All third parties receiving personal information are required to maintain confidentiality and appropriate security safeguards.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(97)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-9-employer-obligations\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">9<!-- -->.</span> <!-- -->Employer Obligations</h3>",
+            "target": [
+              "#section-9-employer-obligations"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">9<!-- -->.</span>",
+            "target": [
+              "#section-9-employer-obligations > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(100)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-10-cross-border-data-transfers\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">10<!-- -->.</span> <!-- -->Cross-Border Data Transfers</h3>",
+            "target": [
+              "#section-10-cross-border-data-transfers"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">10<!-- -->.</span>",
+            "target": [
+              "#section-10-cross-border-data-transfers > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(103)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-11-data-retention\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">11<!-- -->.</span> <!-- -->Data Retention</h3>",
+            "target": [
+              "#section-11-data-retention"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">11<!-- -->.</span>",
+            "target": [
+              "#section-11-data-retention > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">Personal information is retained only for as long as necessary to provide services, meet legal obligations, resolve disputes, and enforce agreements. Thereafter, information is securely deleted or anonymized.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(106)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-12-security-measures\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">12<!-- -->.</span> <!-- -->Security Measures</h3>",
+            "target": [
+              "#section-12-security-measures"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">12<!-- -->.</span>",
+            "target": [
+              "#section-12-security-measures > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(109)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-13-user-rights\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">13<!-- -->.</span> <!-- -->User Rights</h3>",
+            "target": [
+              "#section-13-user-rights"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">13<!-- -->.</span>",
+            "target": [
+              "#section-13-user-rights > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">Subject to applicable law, Users may request:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(112)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) access to their personal information;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(113)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) correction of inaccurate information;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(114)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) withdrawal of consent;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(115)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) deletion where legally permissible; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(116)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(e) information regarding AI-assisted processing.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(117)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">Requests may be submitted to:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(118)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg font-extrabold\">ENABLED HR LABS INC.</p>",
+            "target": [
+              ".font-extrabold.ml-20.mt-3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">Email: <span class=\"font-extrabold\">jeby@enabledtalent.com</span></p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(121)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-extrabold\">jeby@enabledtalent.com</span>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(121) > .font-extrabold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-14-cookies-and-tracking-technologies\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">14<!-- -->.</span> <!-- -->Cookies and Tracking Technologies</h3>",
+            "target": [
+              "#section-14-cookies-and-tracking-technologies"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">14<!-- -->.</span>",
+            "target": [
+              "#section-14-cookies-and-tracking-technologies > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">The Platform uses cookies and similar technologies to maintain sessions and analyze usage. Users may control cookie settings through their browser. Disabling cookies may affect Platform functionality.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(124)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-15-minors\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">15<!-- -->.</span> <!-- -->Minors</h3>",
+            "target": [
+              "#section-15-minors"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">15<!-- -->.</span>",
+            "target": [
+              "#section-15-minors > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">The Platform is not intended for individuals under sixteen (16) years of age without appropriate authorization. The Company does not knowingly collect personal information from minors under sixteen.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(127)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"section-16-amendments\" class=\"scroll-mt-28 mt-12 mb-3 text-[30px] font-semibold leading-tight text-slate-900\"><span class=\"font-bold\">16<!-- -->.</span> <!-- -->Amendments</h3>",
+            "target": [
+              "#section-16-amendments"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"font-bold\">16<!-- -->.</span>",
+            "target": [
+              "#section-16-amendments > .font-bold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 ml-20 text-base leading-relaxed sm:text-lg \">The Company may amend this Policy from time to time. Continued use of the Platform constitutes acceptance of the amended Policy.</p>",
+            "target": [
+              ".ml-20.mt-3.leading-relaxed:nth-child(130)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p id=\"section-2\" class=\"scroll-mt-28 mt-14 text-[30px] font-bold uppercase tracking-wide text-slate-900\">SECTION 2</p>",
+            "target": [
+              "#section-2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-base font-bold text-slate-900\">AI TRANSPARENCY NOTICE</p>",
+            "target": [
+              ".mt-2.font-bold.text-slate-900:nth-child(134)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 ml-0 text-base leading-relaxed sm:text-lg \">Enabled Talent uses artificial intelligence to enhance recruitment efficiency, accessibility, and user experience.</p>",
+            "target": [
+              ".mt-4.ml-0.leading-relaxed:nth-child(135)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">AI is used to:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(136)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) recommend employment opportunities;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(137)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) identify relevant candidate skills;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(138)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) generate candidate summaries; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(139)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) improve accessibility features.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(140)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-20 text-base leading-relaxed sm:text-lg\">AI is not used to:</p>",
+            "target": [
+              ".ml-20.mb-2.mt-3:nth-child(141)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) make final hiring or rejection decisions;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(142)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) evaluate disability or health information for employment decisions; or</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(143)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) replace human judgment.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(144)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 ml-0 text-base leading-relaxed sm:text-lg \">All employment decisions remain under human authority. Users may request information regarding AI-assisted recommendations affecting them.</p>",
+            "target": [
+              ".mt-4.ml-0.leading-relaxed:nth-child(145)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p id=\"section-3\" class=\"scroll-mt-28 mt-14 text-[30px] font-bold uppercase tracking-wide text-slate-900\">SECTION 3</p>",
+            "target": [
+              "#section-3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-base font-bold text-slate-900\">REGULATORY READINESS MEMORANDUM</p>",
+            "target": [
+              ".mt-2.font-bold.text-slate-900:nth-child(148)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-12 mb-2 ml-0 text-[20px] font-bold text-slate-900\">Overview</p>",
+            "target": [
+              ".text-\\[20px\\].ml-0.mt-12:nth-child(150)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 ml-0 text-base leading-relaxed sm:text-lg \">",
+            "target": [
+              ".mt-4.ml-0.leading-relaxed:nth-child(151)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-12 mb-2 ml-0 text-[20px] font-bold text-slate-900\">Compliance Commitments</p>",
+            "target": [
+              ".text-\\[20px\\].ml-0.mt-12:nth-child(153)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-0 text-base leading-relaxed sm:text-lg\">The Company commits to:</p>",
+            "target": [
+              ".ml-0.mb-2.mt-3"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(a) obtaining meaningful user consent for data collection and use;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(155)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(b) limiting data collection to defined purposes;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(156)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(c) implementing strong security safeguards;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(157)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(d) maintaining breach-response procedures;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(158)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(e) ensuring accessibility-first platform design;</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(159)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(f) applying human oversight to AI systems; and</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(160)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 mb-2 ml-32 text-base leading-relaxed sm:text-lg\">(g) requiring employer accountability in recruitment practices.</p>",
+            "target": [
+              ".ml-32.mb-2.mt-3:nth-child(161)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-12 mb-2 ml-0 text-[20px] font-bold text-slate-900\">Conclusion</p>",
+            "target": [
+              ".text-\\[20px\\].ml-0.mt-12:nth-child(163)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.83,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.83"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 ml-0 text-base leading-relaxed sm:text-lg \">Enabled Talent is committed to operating a lawful, privacy-respecting, and inclusive recruitment platform that protects personal information, ensures accessibility, and applies artificial intelligence responsibly.</p>",
+            "target": [
+              ".mt-4.ml-0.leading-relaxed:nth-child(164)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-[22px] font-extrabold text-slate-900 sm:text-3xl lg:text-[42px]\">Building Infrastructure<br>for meaningful employment</h3>",
+            "target": [
+              ".text-\\[22px\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 text-[15px] leading-7 text-slate-700 sm:text-base\">Stay informed with cutting-edge AI insights, wellness innovation, and inclusive tech-driven hiring, connecting diverse talent with forward-thinking employers!</p>",
+            "target": [
+              ".sm\\:text-base"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 13.52,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 13.52"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-xl font-semibold text-slate-800\">EnabledTalent</span>",
+            "target": [
+              ".text-xl"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Product</h4>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(1) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/fortalents\">Find Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"fortalents\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Career Coach</button>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(1) > .space-y-2 > li:nth-child(2) > .text-left.cursor-pointer[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/foremployers\">Enabled Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"foremployers\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/foremployers/agent\">Enabled AI Agent</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"agent\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/enableacademy\">Enabled Academy</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enableacademy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/students\">For Educators</a>",
+            "target": [
+              "a[href$=\"students\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">For NGOs</button>",
+            "target": [
+              "li:nth-child(7) > .text-left.cursor-pointer[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">For Governments</button>",
+            "target": [
+              "li:nth-child(8) > .text-left.cursor-pointer[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Case Studies</h4>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(2) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Durham</button>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(2) > .space-y-2 > li > .text-left.cursor-pointer[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Countries</h4>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(3) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"https://www.enabledafrica.com/\">EnabledAfrica</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enabledafrica.com/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Spain</button>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(3) > .space-y-2 > li:nth-child(2) > .text-left.cursor-pointer[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Resources</h4>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(4) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/blogs\">Blog</a>",
+            "target": [
+              "a[href$=\"blogs\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/faqs\">FAQs</a>",
+            "target": [
+              "a[href$=\"faqs\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Company</h4>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(5) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/about-us\">About</a>",
+            "target": [
+              "a[href$=\"about-us\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Partners</button>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(5) > .space-y-2 > li:nth-child(2) > .text-left.cursor-pointer[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/careers\">Careers</a>",
+            "target": [
+              "a[href$=\"careers\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Legal</h4>",
+            "target": [
+              ".sm\\:text-left.space-y-3.text-center:nth-child(6) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/privacy-policy\">Privacy Policy</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"privacy-policy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/accessibility-policy\">Accessibility Policy</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"accessibility-policy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/responsible-ai\">Responsible AI</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"responsible-ai\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 7.01,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.01"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 text-right text-xs text-slate-600\">(c) 2026 EnabledTalent. All rights reserved.</p>",
+            "target": [
+              ".text-right.text-xs.mt-4"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"plus_jakarta_sans_a6cea338-module__j4feBW__className bg-white px-4 pb-16 pt-12 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"text-[28px] font-extrabold text-slate-900 sm:text-4xl lg:text-[56px]\">Inclusive Success<br class=\"hidden sm:block\"><span class=\"text-slate-900\"> Starts with a Conversation.</span></h2>",
+            "target": [
+              "h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"plus_jakarta_sans_a6cea338-module__j4feBW__className bg-white px-4 pb-16 pt-12 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-slate-900\"> Starts with a Conversation.</span>",
+            "target": [
+              "h2 > span"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"plus_jakarta_sans_a6cea338-module__j4feBW__className bg-white px-4 pb-16 pt-12 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"max-w-2xl text-[15px] leading-7 text-slate-600 sm:text-lg lg:text-[19px]\">Whether you're hiring, job-seeking, or building inclusion into your programs, we're here to help you turn purpose into progress.</p>",
+            "target": [
+              ".lg\\:text-\\[19px\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button aria-label=\"Sales demo\" type=\"button\" class=\"group cursor-pointer...\">",
+                    "target": [
+                      ".group"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Sales demo</span>",
+            "target": [
+              ".group > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  }
+]

@@ -1,0 +1,4115 @@
+[
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.11.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.0.0 Safari/537.36",
+      "windowWidth": 762,
+      "windowHeight": 428,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-02-18T01:44:31.947Z",
+    "url": "http://localhost:4173/foremployers",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#404040",
+                  "bgColor": "#e5e5e5",
+                  "contrastRatio": 8.23,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 8.23"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mb-6 inline-flex items-center rounded-full bg-neutral-200 px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-neutral-700\">HOW ENABLED JOBS WORKS</p>",
+            "target": [
+              ".sm\\:py-20.lg\\:py-24[aria-labelledby=\"employers-how-it-works-heading\"]:nth-child(2) > .lg\\:px-8.max-w-360.sm\\:px-6 > .sm\\:mb-12 > .bg-neutral-200.text-neutral-700.tracking-\\[0\\.2em\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1a202c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 16.31,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.31"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"employers-how-it-works-heading\" class=\"text-[2.5rem] font-bold tracking-tight text-[#1A202C]\">Simple, Fast &amp; <br><span class=\"text-[#8C4A0E]\">Designed for Real Hiring</span></h2>",
+            "target": [
+              ".sm\\:py-20.lg\\:py-24[aria-labelledby=\"employers-how-it-works-heading\"]:nth-child(2) > .lg\\:px-8.max-w-360.sm\\:px-6 > .sm\\:mb-12 > .text-\\[2\\.5rem\\].tracking-tight"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#8c4a0e",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 6.77,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.77"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-[#8C4A0E]\">Designed for Real Hiring</span>",
+            "target": [
+              ".sm\\:py-20.lg\\:py-24[aria-labelledby=\"employers-how-it-works-heading\"]:nth-child(2) > .lg\\:px-8.max-w-360.sm\\:px-6 > .sm\\:mb-12 > .text-\\[2\\.5rem\\].tracking-tight > .text-\\[\\#8C4A0E\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#8a4a12",
+                  "contrastRatio": 6.84,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.84"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"flex mb-10 mt-10 w-max items-center justify-center rounded-full bg-[#8A4A12] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white mx-auto sm:mx-0 sm:justify-start\">STEP 1</div>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > .w-max.bg-\\[\\#8A4A12\\].tracking-\\[0\\.18em\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#8a4a12",
+                  "contrastRatio": 6.84,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.84"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"flex mb-10 mt-10 w-max items-center justify-center rounded-full bg-[#8A4A12] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white mx-auto sm:mx-0 sm:justify-start\">STEP 2</div>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > .w-max.bg-\\[\\#8A4A12\\].tracking-\\[0\\.18em\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#8a4a12",
+                  "contrastRatio": 6.84,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.84"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"flex mb-10 mt-10 w-max items-center justify-center rounded-full bg-[#8A4A12] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white mx-auto sm:mx-0 sm:justify-start\">STEP 3</div>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > .w-max.bg-\\[\\#8A4A12\\].tracking-\\[0\\.18em\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#8a4a12",
+                  "contrastRatio": 6.84,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.84"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"flex mb-10 mt-10 w-max items-center justify-center rounded-full bg-[#8A4A12] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white mx-auto sm:mx-0 sm:justify-start\">STEP 4</div>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > .w-max.bg-\\[\\#8A4A12\\].tracking-\\[0\\.18em\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#404040",
+                  "bgColor": "#e5e5e5",
+                  "contrastRatio": 8.23,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 8.23"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mb-6 inline-flex items-center rounded-full bg-neutral-200 px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-neutral-700\">Why choose ENABLED JOBS</p>",
+            "target": [
+              ".sm\\:py-20.lg\\:py-24[aria-labelledby=\"employers-how-it-works-heading\"]:nth-child(3) > .lg\\:px-8.max-w-360.sm\\:px-6 > .sm\\:mb-12 > .bg-neutral-200.text-neutral-700.tracking-\\[0\\.2em\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1a202c",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 16.31,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.31"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"employers-how-it-works-heading\" class=\"text-[2.5rem] font-bold tracking-tight text-[#1A202C]\">A Smarter Way<br class=\" md:hidden\"><span class=\"text-[#8C4A0E]\"> to Hire Talent</span></h2>",
+            "target": [
+              ".sm\\:py-20.lg\\:py-24[aria-labelledby=\"employers-how-it-works-heading\"]:nth-child(3) > .lg\\:px-8.max-w-360.sm\\:px-6 > .sm\\:mb-12 > .text-\\[2\\.5rem\\].tracking-tight"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#8c4a0e",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 6.77,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.77"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-[#8C4A0E]\"> to Hire Talent</span>",
+            "target": [
+              ".sm\\:py-20.lg\\:py-24[aria-labelledby=\"employers-how-it-works-heading\"]:nth-child(3) > .lg\\:px-8.max-w-360.sm\\:px-6 > .sm\\:mb-12 > .text-\\[2\\.5rem\\].tracking-tight > .text-\\[\\#8C4A0E\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.85,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.85"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"match-based-hiring-title\" class=\"text-2xl font-bold text-[#0F172A] mb-4 mt-8\">Match-Based Hiring</h3>",
+            "target": [
+              "#match-based-hiring-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4b5563",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.55,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.55"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-base leading-[1.6] text-[#4B5563]\">Every applicant is scored, ranked, and clearly explained. No guesswork.</p>",
+            "target": [
+              "article[aria-labelledby=\"match-based-hiring-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-6 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(2) > .mt-2.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.85,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.85"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"bias-free-screening-title\" class=\"text-2xl font-bold text-[#0F172A] mb-4 mt-8\">Bias-Free Screening</h3>",
+            "target": [
+              "#bias-free-screening-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4b5563",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.55,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.55"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-base leading-[1.6] text-[#4B5563]\">Structured evaluation that focuses on skills, not background barriers.</p>",
+            "target": [
+              "article[aria-labelledby=\"bias-free-screening-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-6 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(2) > .mt-2.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.85,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.85"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"built-for-inclusion-title\" class=\"text-2xl font-bold text-[#0F172A] mb-4 mt-8\">Built for Inclusion</h3>",
+            "target": [
+              "#built-for-inclusion-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4b5563",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.55,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.55"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-base leading-[1.6] text-[#4B5563]\">Welcome candidates with disabilities and underrepresented groups through clear, accessible job postings.</p>",
+            "target": [
+              "article[aria-labelledby=\"built-for-inclusion-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-6 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(2) > .mt-2.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.85,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.85"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"faster-shortlisting-title\" class=\"text-2xl font-bold text-[#0F172A] mb-4 mt-8\">Faster Shortlisting</h3>",
+            "target": [
+              "#faster-shortlisting-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4b5563",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.55,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.55"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-base leading-[1.6] text-[#4B5563]\">Skip manual filtering — see your top 10 matches in seconds.</p>",
+            "target": [
+              "article[aria-labelledby=\"faster-shortlisting-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-6 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(2) > .mt-2.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.85,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.85"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 id=\"integrated-messaging-title\" class=\"text-2xl font-bold text-[#0F172A] mb-4 mt-8\">Integrated Messaging</h3>",
+            "target": [
+              "#integrated-messaging-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#4b5563",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 7.55,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.55"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-2 text-base leading-[1.6] text-[#4B5563]\">Auto-generated messages help you follow up quickly and professionally.</p>",
+            "target": [
+              "article[aria-labelledby=\"integrated-messaging-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-6 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(2) > .mt-2.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#404040",
+                  "bgColor": "#e5e5e5",
+                  "contrastRatio": 8.23,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 8.23"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mb-6 inline-flex items-center rounded-full bg-neutral-200 px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-neutral-700\">MATCH SCORE &amp; RANKING PREVIEW</p>",
+            "target": [
+              ".grid-lines-bg > .sm\\:mb-12 > .bg-neutral-200.text-neutral-700.tracking-\\[0\\.2em\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#364153",
+                  "contrastRatio": 10.3,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.3"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mb-6 inline-flex items-center rounded-full bg-gray-700 px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-white\">AUTO-GENERATED EMPLOYER EMAIL TEMPLATES</p>",
+            "target": [
+              ".bg-gray-700"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1e2939",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.67,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.67"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p>Hi <span class=\"text-orange-600\">Jeby,</span></p>",
+            "target": [
+              ".mt-6.text-xl.mb-10 > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#f54900",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.6,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 3.6"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-orange-600\">Jeby,</span>",
+            "target": [
+              "p:nth-child(1) > .text-orange-600"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1e2939",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 14.67,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.67"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-10 mb-6\">Thanks for applying to<!-- --> <span class=\"text-orange-600\">Senior Manager </span>role. Based on your experience in skills, we'd love to move you to the next stage.</p>",
+            "target": [
+              ".mb-6.mt-10"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#f54900",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.6,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 3.6"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-orange-600\">Senior Manager </span>",
+            "target": [
+              ".mb-6.mt-10 > .text-orange-600"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#e2e8f0",
+                  "contrastRatio": 14.46,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.46"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-14 mx-auto inline-flex items-center rounded-full bg-slate-200 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-900\">PRICING TEASER</p>",
+            "target": [
+              ".mt-14"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"pricing-heading\" class=\"mt-6 text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl\">Flexible Plans for Every Team</h2>",
+            "target": [
+              "#pricing-heading"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 7.01,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.01"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-slate-600 sm:text-base\">Whether you're hiring for one role or scaling across departments — we have a plan for you. Choose the perfect plan for your hiring needs. All job posts are active for 30 days.</p>",
+            "target": [
+              ".max-w-3xl"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6b738",
+                  "contrastRatio": 9.97,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.97"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" id=\"plan-tab-single\" role=\"tab\" aria-selected=\"true\" aria-controls=\"plan-panel-single\" class=\"flex w-full items-ce...\" tabindex=\"0\">",
+            "target": [
+              "#plan-tab-single"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 7.01,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.01"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" id=\"plan-tab-multi\" role=\"tab\" aria-selected=\"false\" aria-controls=\"plan-panel-multi\" class=\"flex w-full items-ce...\" tabindex=\"-1\">",
+            "target": [
+              "#plan-tab-multi"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 7.01,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.01"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" id=\"plan-tab-enterprise\" role=\"tab\" aria-selected=\"false\" aria-controls=\"plan-panel-enterpris...\" class=\"flex w-full items-ce...\" tabindex=\"-1\">",
+            "target": [
+              "#plan-tab-enterprise"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#efe9dc",
+                  "contrastRatio": 14.73,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.73"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"inline-flex mb-4 items-center gap-1 rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] bg-[#efe9dc] text-slate-900\">Single Job Post</p>",
+            "target": [
+              ".bg-\\[\\#efe9dc\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#1b2130",
+                  "contrastRatio": 16.06,
+                  "fontSize": "36.0pt (48px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.06"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"employers-cta-heading\" class=\"text-4xl font-bold leading-tight text-white sm:text-5xl\">Start Building Your<span class=\"bg-linear-to-r from-[#F97316] via-[#F97316] to-[#EAB308] bg-clip-text text-transparent\"> <!-- -->Talent Pipeline<!-- --> </span>Today</h2>",
+            "target": [
+              "#employers-cta-heading"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#99a1af",
+                  "bgColor": "#1b2130",
+                  "contrastRatio": 6.17,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.17"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p id=\"employers-cta-copy\" class=\"mt-6  text-lg leading-[1.6] text-gray-400\">Continue to grow with AI-driven resumé optimization and personalized interview coaching.</p>",
+            "target": [
+              "#employers-cta-copy"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#99a1af",
+                  "bgColor": "#1b2130",
+                  "contrastRatio": 6.17,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 6.17"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 md:mt-0 text-lg leading-[1.6] text-gray-400\">Connect with a community of peers who have navigated similar journeys for support and mentorship.</p>",
+            "target": [
+              ".md\\:mt-0"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#374151",
+                  "contrastRatio": 10.3,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 10.3"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span>Talk to our Team</span>",
+            "target": [
+              ".shadow-none > span:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h3 class=\"text-[22px] font-extrabold text-slate-900 sm:text-3xl lg:text-[42px]\">Building Infrastructure<br>for meaningful employment</h3>",
+            "target": [
+              ".text-\\[22px\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-3 text-[15px] leading-7 text-slate-700 sm:text-base\">Stay informed with cutting-edge AI insights, wellness innovation, and inclusive tech-driven hiring, connecting diverse talent with forward-thinking employers!</p>",
+            "target": [
+              ".text-\\[15px\\].leading-7.sm\\:text-base"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#1d293d",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 13.52,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 13.52"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"text-xl font-semibold text-slate-800\">EnabledTalent</span>",
+            "target": [
+              ".text-slate-800.text-xl.font-semibold"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Product</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(1) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/fortalents\">Find Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"fortalents\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Career Coach</button>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(1) > .space-y-2.text-slate-700 > li:nth-child(2) > .text-left.hover\\:underline[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/foremployers\">Enabled Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"foremployers\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/foremployers/agent\">Enabled AI Agent</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"agent\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/enableacademy\">Enabled Academy</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enableacademy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/students\">For Educators</a>",
+            "target": [
+              "a[href$=\"students\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">For NGOs</button>",
+            "target": [
+              "li:nth-child(7) > .text-left.hover\\:underline[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">For Governments</button>",
+            "target": [
+              "li:nth-child(8) > .text-left.hover\\:underline[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Case Studies</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(2) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Durham</button>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(2) > .space-y-2.text-slate-700 > li > .text-left.hover\\:underline[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Countries</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(3) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"https://www.enabledafrica.com/\">EnabledAfrica</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enabledafrica.com/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Spain</button>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(3) > .space-y-2.text-slate-700 > li:nth-child(2) > .text-left.hover\\:underline[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Resources</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(4) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/blogs\">Blog</a>",
+            "target": [
+              "a[href$=\"blogs\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/faqs\">FAQs</a>",
+            "target": [
+              "a[href$=\"faqs\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Company</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(5) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/about-us\">About</a>",
+            "target": [
+              "a[href$=\"about-us\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-left\">Partners</button>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(5) > .space-y-2.text-slate-700 > li:nth-child(2) > .text-left.hover\\:underline[type=\"button\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/careers\">Careers</a>",
+            "target": [
+              "a[href$=\"careers\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f172b",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 16.49,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 16.49"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h4 class=\"text-sm font-bold text-slate-900 uppercase tracking-wide\">Legal</h4>",
+            "target": [
+              ".space-y-3.sm\\:text-left.text-center:nth-child(6) > h4"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/privacy-policy\">Privacy Policy</a>",
+            "target": [
+              "a[href$=\"privacy-policy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/accessibility-policy\">Accessibility Policy</a>",
+            "target": [
+              "a[href$=\"accessibility-policy\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#314158",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 9.58,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.58"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"hover:text-slate-900 hover:underline\" href=\"/responsible-ai\">Responsible AI</a>",
+            "target": [
+              "a[href$=\"responsible-ai\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#45556c",
+                  "bgColor": "#f6f6f6",
+                  "contrastRatio": 7.01,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 7.01"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p class=\"mt-4 text-right text-xs text-slate-600\">(c) 2026 EnabledTalent. All rights reserved.</p>",
+            "target": [
+              ".text-right"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\" relative rounded-4xl px-6 py-10 sm:px-10 lg:px-14 lg:py-14 min-h-[30vh]  bg-linear-to-br from-[#FFF0D2] to-[#FFE8BA]\">",
+                    "target": [
+                      ".lg\\:py-14"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h1 id=\"employers-hero-heading\" class=\"mt-4 text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl text-black\">Hire Better.<br>Hire Inclusively.</h1>",
+            "target": [
+              "#employers-hero-heading"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\" relative rounded-4xl px-6 py-10 sm:px-10 lg:px-14 lg:py-14 min-h-[30vh]  bg-linear-to-br from-[#FFF0D2] to-[#FFE8BA]\">",
+                    "target": [
+                      ".lg\\:py-14"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-6 max-w-xl text-base leading-relaxed text-gray-700\">EnableJobs helps employers find qualified talent faster. Create a company profile, post roles, and instantly see top-matched candidates with ranking, match scores, and auto-generated outreach messages.</p>",
+            "target": [
+              ".max-w-xl"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      ".inline-flex[rel=\"noopener noreferrer\"][target=\"_blank\"] > .from-\\[\\#183457\\].to-\\[\\#0D3541\\].focus-visible\\:outline-none"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Create Employer Account</span>",
+            "target": [
+              ".inline-flex[rel=\"noopener noreferrer\"][target=\"_blank\"] > .from-\\[\\#183457\\].to-\\[\\#0D3541\\].focus-visible\\:outline-none > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button type=\"button\" class=\"group cursor-pointer...\">",
+                    "target": [
+                      "nav[aria-label=\"Primary calls to action\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].focus-visible\\:outline-none"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Book a Demo</span>",
+            "target": [
+              "nav[aria-label=\"Primary calls to action\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].focus-visible\\:outline-none > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"create-profile-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"create-profile-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 id=\"create-profile-title\" class=\"text-2xl font-bold text-[#0F172A] mb-6 mt-12\">Create Your Company Profile</h3>",
+            "target": [
+              "#create-profile-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"create-profile-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"create-profile-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-3 text-base leading-[1.6] text-[#4B5563]\">Add your company details, logo, team size, hiring goals, and accessibility preferences.</p>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(3) > .mt-3.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"create-profile-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"create-profile-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Takes less than 5 minutes</span>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"create-profile-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"create-profile-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Build trust and transparency with candidates</span>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"create-profile-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"create-profile-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>All employer accounts include accessibility support options</span>",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > div:nth-child(3) > a[rel=\"noopener noreferrer\"][target=\"_blank\"] > .group-hover\\:-translate-y-px.hover\\:-translate-y-0\\.5.hover\\:shadow-md"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"group cursor-pointer...\">",
+            "target": [
+              "article[aria-labelledby=\"create-profile-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > div:nth-child(3) > a[rel=\"noopener noreferrer\"][target=\"_blank\"] > .group-hover\\:-translate-y-px.hover\\:-translate-y-0\\.5.hover\\:shadow-md"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"post-job-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"post-job-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 id=\"post-job-title\" class=\"text-2xl font-bold text-[#0F172A] mb-6 mt-12\">Post Your Jobs</h3>",
+            "target": [
+              "#post-job-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"post-job-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"post-job-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-3 text-base leading-[1.6] text-[#4B5563]\">Publish openings with clear requirements and accessibility notes.</p>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(3) > .mt-3.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"post-job-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"post-job-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Add job title, responsibilities, salary range, location</span>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"post-job-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"post-job-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Mention workplace accommodations and flexibility options</span>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"post-job-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"post-job-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Jobs appear instantly to matching candidates</span>",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > div:nth-child(3) > a[rel=\"noopener noreferrer\"][target=\"_blank\"] > .group-hover\\:-translate-y-px.hover\\:-translate-y-0\\.5.hover\\:shadow-md"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"group cursor-pointer...\">",
+            "target": [
+              "article[aria-labelledby=\"post-job-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > div:nth-child(3) > a[rel=\"noopener noreferrer\"][target=\"_blank\"] > .group-hover\\:-translate-y-px.hover\\:-translate-y-0\\.5.hover\\:shadow-md"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"review-candidates-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"review-candidates-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 id=\"review-candidates-title\" class=\"text-2xl font-bold text-[#0F172A] mb-6 mt-12\">Review Ranked Candidates</h3>",
+            "target": [
+              "#review-candidates-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"review-candidates-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"review-candidates-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-3 text-base leading-[1.6] text-[#4B5563]\">Every applicant is automatically analyzed and ranked.</p>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(3) > .mt-3.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"review-candidates-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"review-candidates-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Candidates displayed with a Match Percentage</span>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"review-candidates-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"review-candidates-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Ranking factors include skills, experience, accessibility needs, and alignment</span>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"review-candidates-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"review-candidates-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>View key details without opening every resume</span>",
+            "target": [
+              "article[aria-labelledby=\"review-candidates-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"review-candidates-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-blue p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#EAF4FF;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"review-candidates-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-base font-semibold italic text-[#1F2937]\">Top Matches Rise to the Top</p>",
+            "target": [
+              ".italic"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"connect-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"connect-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 id=\"connect-title\" class=\"text-2xl font-bold text-[#0F172A] mb-6 mt-12\">Connect With Candidates Easily</h3>",
+            "target": [
+              "#connect-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"connect-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"connect-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-3 text-base leading-[1.6] text-[#4B5563]\">Send messages directly inside the platform — or use auto-generated email templates.</p>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .sm\\:items-start.sm\\:text-left.flex-col > div:nth-child(3) > .mt-3.leading-\\[1\\.6\\].text-\\[\\#4B5563\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"connect-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"connect-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>System writes personalized employer outreach emails</span>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(1) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"connect-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"connect-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>You can edit, customize, or send with one click</span>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(2) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#C27835] font-extrabold\">→</span>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > .text-\\[\\#C27835\\].font-extrabold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<article aria-labelledby=\"connect-title\" class=\"relative min-h-[260px] rounded-[32px] card-bg-grid-cream p-10 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg\" style=\"background-color:#FFFBF0;background-size:18px 18px\">",
+                    "target": [
+                      "article[aria-labelledby=\"connect-title\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Keep communication consistent and fast</span>",
+            "target": [
+              "article[aria-labelledby=\"connect-title\"] > .lg\\:grid-cols-\\[1fr_auto\\].lg\\:items-start.gap-6 > .space-y-5 > .space-y-3 > .gap-2.text-\\[\\#4B5563\\]:nth-child(3) > span:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 id=\"employers-how-it-works-heading\" class=\"text-[2.5rem] font-bold tracking-tight text-[#1A202C]\">See Your<br class=\"md:hidden\"><span class=\"text-[#8C4A0E]\"> Best Candidates</span><span class=\"text-[#1A202C]\"> Instantly</span></h2>",
+            "target": [
+              ".grid-lines-bg > .sm\\:mb-12 > .text-\\[2\\.5rem\\].tracking-tight"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#8C4A0E]\"> Best Candidates</span>",
+            "target": [
+              ".grid-lines-bg > .sm\\:mb-12 > .text-\\[2\\.5rem\\].tracking-tight > .text-\\[\\#8C4A0E\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#1A202C]\"> Instantly</span>",
+            "target": [
+              ".text-\\[2\\.5rem\\].tracking-tight > .text-\\[\\#1A202C\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-10 text-base font-medium text-gray-600\">Our matching system compares your job requirements with each applicant’s skills, experience, and preferences<br>— then ranks them automatically.</p>",
+            "target": [
+              ".text-gray-600"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Match Score<br><span class=\"text-[#1A202C]\">0% to 100%</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(1)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-2xl font-bold text-[#8C4A0E]\">Match Score<br><span class=\"text-[#1A202C]\">0% to 100%</span></p>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(1) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Match Score<br><span class=\"text-[#1A202C]\">0% to 100%</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(1)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#1A202C]\">0% to 100%</span>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(1) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold > .text-\\[\\#1A202C\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Top 3 Candidates<br><span class=\"text-[#1A202C]\">Highlights</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-2xl font-bold text-[#8C4A0E]\">Top 3 Candidates<br><span class=\"text-[#1A202C]\">Highlights</span></p>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(2) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Top 3 Candidates<br><span class=\"text-[#1A202C]\">Highlights</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#1A202C]\">Highlights</span>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(2) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold > .text-\\[\\#1A202C\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Accessibility<br><span class=\"text-[#1A202C]\">Notes</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(3)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-2xl font-bold text-[#8C4A0E]\">Accessibility<br><span class=\"text-[#1A202C]\">Notes</span></p>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(3) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Accessibility<br><span class=\"text-[#1A202C]\">Notes</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(3)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#1A202C]\">Notes</span>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(3) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold > .text-\\[\\#1A202C\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Skill Alignment <br><span class=\"text-[#1A202C]\">Tags</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-2xl font-bold text-[#8C4A0E]\">Skill Alignment <br><span class=\"text-[#1A202C]\">Tags</span></p>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(4) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Skill Alignment <br><span class=\"text-[#1A202C]\">Tags</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#1A202C]\">Tags</span>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(4) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold > .text-\\[\\#1A202C\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Work Experience<br><span class=\"text-[#1A202C]\">Snapshot</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(5)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-2xl font-bold text-[#8C4A0E]\">Work Experience<br><span class=\"text-[#1A202C]\">Snapshot</span></p>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(5) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"border-t-4 border-[#8C4A0E] bg-white/80 p-4\"><p class=\"text-2xl font-bold text-[#8C4A0E]\">Work Experience<br><span class=\"text-[#1A202C]\">Snapshot</span></p></div>",
+                    "target": [
+                      ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(5)"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\" w-full  bg-[#E3E3E3]/10 p-6\">",
+                    "target": [
+                      ".bg-\\[\\#E3E3E3\\]\\/10.p-6.w-full"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"grid-lines-bg rounded-4xl border border-[#E5E7EB] bg-[#E3E3E3]/10 p-6 sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".grid-lines-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-[#1A202C]\">Snapshot</span>",
+            "target": [
+              ".border-t-4.border-\\[\\#8C4A0E\\].bg-white\\/80:nth-child(5) > .text-\\[\\#8C4A0E\\].text-2xl.font-bold > .text-\\[\\#1A202C\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"bg-linear-to-b from-[#182434] to-[#2F4562] text-white p-8\">",
+                    "target": [
+                      ".bg-linear-to-b"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 id=\"employers-how-it-works-heading\" class=\"text-[2.5rem] font-bold tracking-tight text-white\">Save Time With<br class=\"md:hidden\"><span class=\"text-gradient-warm\"> Smart Messaging</span></h2>",
+            "target": [
+              ".bg-linear-to-b > .sm\\:mb-12 > .text-\\[2\\.5rem\\].tracking-tight"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "30.0pt (40px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"text-gradient-warm\"> Smart Messaging</span>",
+                    "target": [
+                      ".text-gradient-warm"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-gradient-warm\"> Smart Messaging</span>",
+            "target": [
+              ".text-gradient-warm"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"bg-linear-to-b from-[#182434] to-[#2F4562] text-white p-8\">",
+                    "target": [
+                      ".bg-linear-to-b"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-10 text-base font-medium text-gray-100\">EnabledJobs creates ready-to-send emails for your hiring process.</p>",
+            "target": [
+              ".text-gray-100"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)]\"></div>",
+                    "target": [
+                      ".bg-\\[linear-gradient\\(rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\,linear-gradient\\(90deg\\,rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"ml-4 text-xl font-medium text-white\">Shortlist Email</p>",
+            "target": [
+              ".items-center.flex:nth-child(1) > .ml-4.text-xl.text-white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)]\"></div>",
+                    "target": [
+                      ".bg-\\[linear-gradient\\(rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\,linear-gradient\\(90deg\\,rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"ml-4 text-xl font-medium text-white\">Interview Invite</p>",
+            "target": [
+              ".items-center.flex:nth-child(2) > .ml-4.text-xl.text-white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)]\"></div>",
+                    "target": [
+                      ".bg-\\[linear-gradient\\(rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\,linear-gradient\\(90deg\\,rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"ml-4 text-xl font-medium text-white\">Assessment Request</p>",
+            "target": [
+              ".items-center.flex:nth-child(3) > .ml-4.text-xl.text-white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)]\"></div>",
+                    "target": [
+                      ".bg-\\[linear-gradient\\(rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\,linear-gradient\\(90deg\\,rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"ml-4 text-xl font-medium text-white\">Follow-up / Reminder</p>",
+            "target": [
+              ".items-center.flex:nth-child(4) > .ml-4.text-xl.text-white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)]\"></div>",
+                    "target": [
+                      ".bg-\\[linear-gradient\\(rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\,linear-gradient\\(90deg\\,rgba\\(255\\,255\\,255\\,0\\.05\\)_1px\\,transparent_1px\\)\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"ml-4 text-xl font-medium text-white\">Rejection With Positive Feedback</p>",
+            "target": [
+              ".items-center.flex:nth-child(5) > .ml-4.text-xl.text-white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 z-0\" style=\"background-image:linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),\n                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);background-size:40px 40px\" aria-hidden=\"true\"></div>",
+                    "target": [
+                      ".z-0"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 class=\"mt-4 text-2xl font-semibold sm:text-3xl lg:text-4xl\">Post one job and instantly reach verified candidates.</h3>",
+            "target": [
+              ".lg\\:text-4xl"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 z-0\" style=\"background-image:linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),\n                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);background-size:40px 40px\" aria-hidden=\"true\"></div>",
+                    "target": [
+                      ".z-0"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-3 text-sm text-slate-700\">Perfect for quick hiring needs.</p>",
+            "target": [
+              ".mt-3.text-slate-700.text-sm"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 z-0\" style=\"background-image:linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),\n                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);background-size:40px 40px\" aria-hidden=\"true\"></div>",
+                    "target": [
+                      ".z-0"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-3xl mb-2 font-bold text-slate-900\">CAD 300</p>",
+            "target": [
+              ".mb-2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 z-0\" style=\"background-image:linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),\n                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);background-size:40px 40px\" aria-hidden=\"true\"></div>",
+                    "target": [
+                      ".z-0"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-sm text-slate-500\">per job post</p>",
+            "target": [
+              ".text-slate-500"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button type=\"button\" class=\"group cursor-pointer...\">",
+                    "target": [
+                      ".lg\\:w-\\[40\\%\\] > .mt-8 > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].focus-visible\\:outline-none"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>View all plans</span>",
+            "target": [
+              ".lg\\:w-\\[40\\%\\] > .mt-8 > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].focus-visible\\:outline-none > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 z-0\" style=\"background-image:linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),\n                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);background-size:40px 40px\" aria-hidden=\"true\"></div>",
+                    "target": [
+                      ".z-0"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>30-day active listing</span>",
+            "target": [
+              ".text-slate-800.gap-3.text-sm:nth-child(1) > span"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 z-0\" style=\"background-image:linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),\n                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);background-size:40px 40px\" aria-hidden=\"true\"></div>",
+                    "target": [
+                      ".z-0"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Full job posting features</span>",
+            "target": [
+              ".text-slate-800.gap-3.text-sm:nth-child(2) > span"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"pointer-events-none absolute inset-0 z-0\" style=\"background-image:linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),\n                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);background-size:40px 40px\" aria-hidden=\"true\"></div>",
+                    "target": [
+                      ".z-0"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Email support</span>",
+            "target": [
+              ".text-slate-800.gap-3.text-sm:nth-child(3) > span"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "36.0pt (48px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"bg-linear-to-r from-[#F97316] via-[#F97316] to-[#EAB308] bg-clip-text text-transparent\"> <!-- -->Talent Pipeline<!-- --> </span>",
+                    "target": [
+                      ".from-\\[\\#F97316\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"bg-linear-to-r from-[#F97316] via-[#F97316] to-[#EAB308] bg-clip-text text-transparent\"> <!-- -->Talent Pipeline<!-- --> </span>",
+            "target": [
+              ".from-\\[\\#F97316\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<span class=\"group cursor-pointer...\">",
+                    "target": [
+                      ".inline-flex[rel=\"noopener noreferrer\"][target=\"_blank\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].focus-visible\\:outline-none"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Create Employer Profile</span>",
+            "target": [
+              ".inline-flex[rel=\"noopener noreferrer\"][target=\"_blank\"] > .from-\\[\\#FFD071\\].to-\\[\\#EFB745\\].focus-visible\\:outline-none > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"plus_jakarta_sans_a6cea338-module__j4feBW__className bg-white px-4 pb-16 pt-12 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"text-[28px] font-extrabold text-slate-900 sm:text-4xl lg:text-[56px]\">Inclusive Success<br class=\"hidden sm:block\"><span class=\"text-slate-900\"> Starts with a Conversation.</span></h2>",
+            "target": [
+              ".text-\\[28px\\]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"plus_jakarta_sans_a6cea338-module__j4feBW__className bg-white px-4 pb-16 pt-12 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-slate-900\"> Starts with a Conversation.</span>",
+            "target": [
+              ".text-\\[28px\\] > .text-slate-900"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"plus_jakarta_sans_a6cea338-module__j4feBW__className bg-white px-4 pb-16 pt-12 sm:pt-20 lg:pt-24\" style=\"background-image:url(\"/images/Footer%20background/footer%20background.png\");background-size:cover;background-position:center;background-repeat:no-repeat\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"max-w-2xl text-[15px] leading-7 text-slate-600 sm:text-lg lg:text-[19px]\">Whether you're hiring, job-seeking, or building inclusion into your programs, we're here to help you turn purpose into progress.</p>",
+            "target": [
+              ".sm\\:text-lg"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button aria-label=\"Sales demo\" type=\"button\" class=\"group cursor-pointer...\">",
+                    "target": [
+                      "button[aria-label=\"Sales demo\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span>Sales demo</span>",
+            "target": [
+              "button[aria-label=\"Sales demo\"] > span:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  }
+]

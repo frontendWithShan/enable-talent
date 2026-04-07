@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attention-Friendly Color Gallery | WCAG 2.2 AAA</title>
+    <style>
+      :root {
+        --text-primary: #102a43;
+        --text-secondary: #243b53;
+        --text-error: #8a1c1c;
+        --text-success: #0b5345;
+        --text-warning: #5c3d00;
+        --link-color: #0b3c91;
+        --focus-ring: #9a6700;
+
+        --bg-primary: #ffffff;
+        --bg-secondary: #f3f7ff;
+        --bg-tertiary: #edf3fb;
+        --bg-hero: #e6f7ff;
+        --bg-job-seeker: #fff4e8;
+        --bg-employer: #e8fff6;
+        --bg-blog-featured: #f2fff1;
+
+        --border-light: #d7e2f0;
+        --border-medium: #b8c7db;
+
+        --shadow-soft: 0 12px 30px rgba(30, 41, 59, 0.08);
+        --radius-lg: 18px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          "Lexend", "Atkinson Hyperlegible", "Trebuchet MS", sans-serif;
+        color: var(--text-primary);
+        background:
+          radial-gradient(circle at 14% 18%, #fff4e8 0%, transparent 42%),
+          radial-gradient(circle at 84% 0%, #e6f7ff 0%, transparent 40%),
+          linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1100px, 100% - 2rem);
+        margin-inline: auto;
+        padding: 2rem 0 4rem;
+      }
+
+      .hero {
+        background: linear-gradient(
+          120deg,
+          #ffffff 10%,
+          #e6f7ff 45%,
+          #fff4e8 100%
+        );
+        border: 2px solid var(--border-light);
+        border-radius: 24px;
+        box-shadow: var(--shadow-soft);
+        padding: clamp(1.5rem, 3vw, 3rem);
+        margin-bottom: 1.5rem;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: 0.02em;
+      }
+
+      .hero p {
+        margin: 0.75rem 0 0;
+        max-width: 70ch;
+        color: var(--text-secondary);
+        font-size: 1.06rem;
+      }
+
+      .pill-row {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+
+      .pill {
+        border: 1.5px solid var(--border-medium);
+        border-radius: 999px;
+        padding: 0.45rem 0.8rem;
+        background: var(--bg-primary);
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .quick-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0.85rem;
+        margin: 1.15rem 0 2rem;
+      }
+
+      .quick-card {
+        background: var(--bg-primary);
+        border: 2px solid var(--border-light);
+        border-radius: 14px;
+        padding: 0.85rem;
+      }
+
+      .quick-card strong {
+        display: block;
+        color: var(--text-primary);
+      }
+
+      .quick-card span {
+        color: var(--text-secondary);
+      }
+
+      section {
+        margin-top: 2rem;
+      }
+
+      h2 {
+        margin: 0 0 0.85rem;
+        font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+        color: var(--text-primary);
+      }
+
+      .section-note {
+        margin: 0 0 1rem;
+        color: var(--text-secondary);
+      }
+
+      .palette-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+
+      .swatch-card {
+        border: 2px solid var(--border-light);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        background: var(--bg-primary);
+        box-shadow: var(--shadow-soft);
+      }
+
+      .swatch {
+        min-height: 96px;
+        padding: 1rem;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+      }
+
+      .swatch-body {
+        padding: 0.95rem;
+      }
+
+      .swatch-body h3 {
+        margin: 0;
+        font-size: 1.06rem;
+      }
+
+      .meta {
+        margin-top: 0.35rem;
+        color: var(--text-secondary);
+      }
+
+      .hex-btn {
+        margin-top: 0.65rem;
+        border: 2px solid var(--border-medium);
+        border-radius: 10px;
+        padding: 0.45rem 0.6rem;
+        background: var(--bg-tertiary);
+        color: var(--text-primary);
+        width: 100%;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .contrast {
+        display: inline-block;
+        margin-top: 0.6rem;
+        background: #ecfdf3;
+        color: #0b5345;
+        border: 1.5px solid #86efac;
+        border-radius: 999px;
+        padding: 0.2rem 0.7rem;
+        font-weight: 700;
+        font-size: 0.86rem;
+      }
+
+      .contrast-attention {
+        margin-top: 2rem;
+        background: #ffffff;
+        border: 2px solid #b8c7db;
+        border-radius: 20px;
+        padding: 1rem;
+      }
+
+      .pair-list {
+        margin: 0.65rem 0 0;
+        padding-left: 1.2rem;
+      }
+
+      .pair-list li {
+        margin-bottom: 0.45rem;
+      }
+
+      .focus-demo {
+        margin-top: 2rem;
+        background: var(--bg-primary);
+        border: 2px solid var(--border-light);
+        border-radius: 20px;
+        padding: 1rem;
+      }
+
+      .focus-target {
+        min-height: 44px;
+        min-width: 44px;
+        border: 2px solid #0b3c91;
+        background: linear-gradient(90deg, #0b3c91 0%, #0a2f6b 100%);
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 0.7rem 1rem;
+        font: inherit;
+        font-weight: 700;
+      }
+
+      .focus-target:focus-visible,
+      .hex-btn:focus-visible {
+        outline: 3px solid var(--focus-ring);
+        outline-offset: 3px;
+        box-shadow: 0 0 0 5px rgba(154, 103, 0, 0.2);
+      }
+
+      .helper {
+        margin-top: 2rem;
+        color: var(--text-secondary);
+        text-align: center;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .hero,
+        .swatch-card,
+        .quick-card {
+          animation: rise 460ms ease-out both;
+        }
+
+        .swatch-card:nth-child(2) {
+          animation-delay: 60ms;
+        }
+
+        .swatch-card:nth-child(3) {
+          animation-delay: 120ms;
+        }
+
+        .swatch-card:nth-child(4) {
+          animation-delay: 180ms;
+        }
+
+        .swatch-card:nth-child(5) {
+          animation-delay: 240ms;
+        }
+
+        .swatch-card:nth-child(6) {
+          animation-delay: 300ms;
+        }
+      }
+
+      @keyframes rise {
+        from {
+          transform: translateY(8px);
+          opacity: 0;
+        }
+
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .hero {
+          border-radius: 18px;
+        }
+
+        .wrap {
+          width: min(1100px, 100% - 1.2rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <h1>Color Gallery That Feels Clear and Energizing</h1>
+        <p>
+          Built to be visually engaging without overload: strong grouping,
+          predictable layout, calm motion, and contrast-safe color choices.
+          Every text color listed here meets WCAG 2.2 AAA on white.
+        </p>
+        <div class="pill-row" aria-label="Design principles">
+          <span class="pill">Chunked Layout</span>
+          <span class="pill">Fast Scanning</span>
+          <span class="pill">Low Visual Noise</span>
+          <span class="pill">AAA-Ready Text</span>
+        </div>
+      </header>
+
+      <div class="quick-grid" aria-label="Quick references">
+        <article class="quick-card">
+          <strong>Main text anchor</strong>
+          <span>#102a43 for consistent reading focus</span>
+        </article>
+        <article class="quick-card">
+          <strong>Accent actions</strong>
+          <span>#0b3c91 for links and CTAs</span>
+        </article>
+        <article class="quick-card">
+          <strong>Calm backgrounds</strong>
+          <span>Soft tints to separate sections gently</span>
+        </article>
+        <article class="quick-card">
+          <strong>Keyboard visibility</strong>
+          <span>3px amber focus ring (#9a6700)</span>
+        </article>
+      </div>
+
+      <section aria-labelledby="text-colors-heading">
+        <h2 id="text-colors-heading">Text Colors (AAA on White)</h2>
+        <p class="section-note">
+          Tap or click a HEX button to copy. Keep headings and paragraphs on
+          these text tones for readable, fatigue-friendly interfaces.
+        </p>
+        <div class="palette-grid">
+          <article class="swatch-card">
+            <div class="swatch" style="background: #102a43; color: #ffffff">
+              PRIMARY TEXT
+            </div>
+            <div class="swatch-body">
+              <h3>Primary Text</h3>
+              <p class="meta">Body text, headings, main information.</p>
+              <button class="hex-btn" data-hex="#102a43" type="button">
+                #102a43
+              </button>
+              <span class="contrast">AAA on white</span>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #243b53; color: #ffffff">
+              SECONDARY TEXT
+            </div>
+            <div class="swatch-body">
+              <h3>Secondary Text</h3>
+              <p class="meta">Descriptions, helper text, supporting labels.</p>
+              <button class="hex-btn" data-hex="#243b53" type="button">
+                #243b53
+              </button>
+              <span class="contrast">AAA on white</span>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #8a1c1c; color: #ffffff">
+              ERROR TEXT
+            </div>
+            <div class="swatch-body">
+              <h3>Error Text</h3>
+              <p class="meta">Validation and error messages with clarity.</p>
+              <button class="hex-btn" data-hex="#8a1c1c" type="button">
+                #8a1c1c
+              </button>
+              <span class="contrast">AAA on white</span>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #0b5345; color: #ffffff">
+              SUCCESS TEXT
+            </div>
+            <div class="swatch-body">
+              <h3>Success Text</h3>
+              <p class="meta">Confirmations and positive status feedback.</p>
+              <button class="hex-btn" data-hex="#0b5345" type="button">
+                #0b5345
+              </button>
+              <span class="contrast">AAA on white</span>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #5c3d00; color: #ffffff">
+              WARNING TEXT
+            </div>
+            <div class="swatch-body">
+              <h3>Warning Text</h3>
+              <p class="meta">Caution states with strong readability.</p>
+              <button class="hex-btn" data-hex="#5c3d00" type="button">
+                #5c3d00
+              </button>
+              <span class="contrast">AAA on white</span>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #0b3c91; color: #ffffff">
+              LINK / CTA
+            </div>
+            <div class="swatch-body">
+              <h3>Link Color</h3>
+              <p class="meta">Links, action cues, and branded accents.</p>
+              <button class="hex-btn" data-hex="#0b3c91" type="button">
+                #0b3c91
+              </button>
+              <span class="contrast">AAA on white</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="background-colors-heading">
+        <h2 id="background-colors-heading">
+          Background Colors (Calm Separation)
+        </h2>
+        <p class="section-note">
+          These soft backgrounds create visual grouping without harsh contrast
+          jumps.
+        </p>
+        <div class="palette-grid">
+          <article class="swatch-card">
+            <div
+              class="swatch"
+              style="
+                background: #ffffff;
+                color: #102a43;
+                border: 1px solid #d7e2f0;
+              "
+            >
+              PRIMARY BG
+            </div>
+            <div class="swatch-body">
+              <h3>Primary BG</h3>
+              <p class="meta">Main reading areas.</p>
+              <button class="hex-btn" data-hex="#ffffff" type="button">
+                #ffffff
+              </button>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #f3f7ff; color: #102a43">
+              SECONDARY BG
+            </div>
+            <div class="swatch-body">
+              <h3>Secondary BG</h3>
+              <p class="meta">Alternating sections and subtle card breaks.</p>
+              <button class="hex-btn" data-hex="#f3f7ff" type="button">
+                #f3f7ff
+              </button>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #edf3fb; color: #102a43">
+              TERTIARY BG
+            </div>
+            <div class="swatch-body">
+              <h3>Tertiary BG</h3>
+              <p class="meta">Hover zones and low-pressure emphasis blocks.</p>
+              <button class="hex-btn" data-hex="#edf3fb" type="button">
+                #edf3fb
+              </button>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #e6f7ff; color: #102a43">
+              HERO BG
+            </div>
+            <div class="swatch-body">
+              <h3>Hero Section</h3>
+              <p class="meta">Top-of-page highlight with soft blue calm.</p>
+              <button class="hex-btn" data-hex="#e6f7ff" type="button">
+                #e6f7ff
+              </button>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #fff4e8; color: #102a43">
+              JOB SEEKER CARD
+            </div>
+            <div class="swatch-body">
+              <h3>Card (Job Seeker)</h3>
+              <p class="meta">Warm tint for supportive guidance sections.</p>
+              <button class="hex-btn" data-hex="#fff4e8" type="button">
+                #fff4e8
+              </button>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #e8fff6; color: #102a43">
+              EMPLOYER CARD
+            </div>
+            <div class="swatch-body">
+              <h3>Card (Employer)</h3>
+              <p class="meta">
+                Cool tint that separates business-focused content.
+              </p>
+              <button class="hex-btn" data-hex="#e8fff6" type="button">
+                #e8fff6
+              </button>
+            </div>
+          </article>
+
+          <article class="swatch-card">
+            <div class="swatch" style="background: #f2fff1; color: #102a43">
+              BLOG FEATURE
+            </div>
+            <div class="swatch-body">
+              <h3>Blog Featured</h3>
+              <p class="meta">
+                Fresh highlight for curated or featured content.
+              </p>
+              <button class="hex-btn" data-hex="#f2fff1" type="button">
+                #f2fff1
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="a11y-check-heading" class="contrast-attention">
+        <h2 id="a11y-check-heading">Quick AAA Pairing Check</h2>
+        <p class="section-note">
+          Safe combinations for body text. Use these as default pairings to keep
+          long reading sessions comfortable.
+        </p>
+        <ul class="pair-list">
+          <li>#102a43 on #ffffff = AAA text contrast</li>
+          <li>#243b53 on #ffffff = AAA text contrast</li>
+          <li>#8a1c1c on #ffffff = AAA text contrast</li>
+          <li>#0b5345 on #ffffff = AAA text contrast</li>
+          <li>#5c3d00 on #ffffff = AAA text contrast</li>
+          <li>#0b3c91 on #ffffff = AAA text contrast</li>
+        </ul>
+      </section>
+
+      <section class="focus-demo" aria-labelledby="focus-demo-heading">
+        <h2 id="focus-demo-heading">Focus Ring Demo (Keyboard)</h2>
+        <p class="section-note">
+          The button below demonstrates a visible, AAA-supportive focus style.
+          Tab to it and confirm the 3px amber outline with clear offset.
+        </p>
+        <button class="focus-target" type="button">
+          Try keyboard focus here
+        </button>
+      </section>
+
+      <p class="helper">
+        Tip: press any HEX button to copy that color instantly.
+      </p>
+    </main>
+
+    <script>
+      const hexButtons = document.querySelectorAll(".hex-btn");
+
+      hexButtons.forEach((button) => {
+        button.addEventListener("click", async () => {
+          const hex = button.getAttribute("data-hex");
+          if (!hex) {
+            return;
+          }
+
+          try {
+            await navigator.clipboard.writeText(hex);
+            const original = button.textContent;
+            button.textContent = "Copied";
+            window.setTimeout(() => {
+              button.textContent = original;
+            }, 1200);
+          } catch (error) {
+            const original = button.textContent;
+            button.textContent = "Copy failed";
+            window.setTimeout(() => {
+              button.textContent = original;
+            }, 1200);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

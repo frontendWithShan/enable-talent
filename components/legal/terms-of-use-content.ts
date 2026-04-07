@@ -1,0 +1,80 @@
+export const termsOfUseText = `JOB POSTING TERMS AND CONDITIONS
+Enabled Talent
+Operating Name: Enabled Talent
+Legal Entity: ENABLED HR LABS INC.
+Website: enabledtalent.com
+Last Updated: February 2026
+1. Agreement and Scope
+By posting a job on the Enabled Talent platform ("Platform"), you, on behalf of yourself and any entity you represent ("Employer"), agree to be bound by these Job Posting Terms and Conditions ("Terms"). These Terms should be read in conjunction with the Enabled Talent Privacy Policy and AI Transparency Notice, which are incorporated by reference herein.
+If you are posting a job on behalf of a company or other entity, you represent and warrant that you have the authority to bind that entity to these Terms.
+2. Platform Role and Limitations
+Enabled Talent is a technology platform only.
+Enabled Talent provides infrastructure for employers to post job opportunities and for job seekers to discover and apply to those opportunities. Enabled Talent is not an employer, not a recruiter, and not a party to any employment relationship formed through the Platform.
+Enabled Talent does not:
+• participate in, direct, or influence hiring or recruitment decisions;
+• screen, evaluate, or select candidates on behalf of employers;
+• act as an employment agency or staffing firm;
+• guarantee the accuracy, completeness, or legality of any job posting; or
+• assume any responsibility for the conduct of employers or the outcomes of any hiring process.
+All hiring decisions, recruitment practices, and employer-candidate relationships are entirely the responsibility of the Employer. Enabled Talent has no role in and accepts no liability for those decisions or practices.
+3. Employer Responsibilities
+The Employer is solely and entirely responsible for the following:
+• Content Accuracy: Accuracy, legality, and content of all job descriptions, screening questions, and any other information or images submitted to the Platform.
+• External Links: The content, security, and privacy practices of any external websites or application systems linked from a job posting.
+• Applicant Privacy Notice: Maintaining and providing a comprehensive privacy notice to job applicants that complies with all applicable privacy laws, including the Personal Information Protection and Electronic Documents Act (PIPEDA) in Canada.
+• Data Handling: Processing all applicant personal information lawfully and solely for legitimate recruitment and hiring purposes.
+• Account Security: Maintaining the security and confidentiality of your account credentials and for all activities that occur under your account.
+4. Employer Legal Compliance
+All employers posting on this Platform are solely responsible for complying with Ontario and Canadian law governing hiring, recruitment, human rights, and accessibility. This obligation rests entirely with the Employer. It applies regardless of where the Employer is located or incorporated.
+Applicable law includes, without limitation:
+• the Ontario Human Rights Code, which prohibits discrimination in hiring on the basis of any protected ground including disability, age, race, gender, and religion;
+• the Accessibility for Ontarians with Disabilities Act (AODA), which requires accessible recruitment processes and accommodation throughout all stages of hiring;
+• the Canadian Human Rights Act, which prohibits discriminatory practices in federally regulated employment;
+• the Employment Standards Act, 2000 (Ontario), which sets minimum standards for employment in Ontario; and
+• the Personal Information Protection and Electronic Documents Act (PIPEDA), which governs the collection, use, and disclosure of applicant personal information.
+Enabled Talent does not monitor, enforce, or guarantee employer compliance with any of the above laws. The Platform is not a regulatory body and does not assume any obligation to ensure employers meet their legal requirements.
+Employers who are found to have violated applicable law may have their postings removed and their accounts suspended or terminated at the sole discretion of the Platform.
+5. Job Posting Rules
+Each job posting must be for a single, specific, and legitimate job opportunity. The following actions are strictly prohibited on the Platform:
+• Unauthorized Data Use: Sharing, selling, or otherwise disclosing identifiable applicant data to any third party outside of authorized recruitment services, or using such data for any purpose unrelated to the specific job application.
+• Harassment: Engaging in any activity that could be construed as spamming or harassing applicants, or contacting them for any reason other than the job for which they applied.
+• Content Infringement: Copying, scraping, or otherwise using content from other employers' job listings without explicit permission.
+• Unauthorized Representation: Posting a job on behalf of a third party without an active and valid recruitment agreement with that third party.
+6. Employer Privacy and Data Obligations
+The Employer, not the Platform, is the data controller for all personal information collected from applicants through the hiring process. The Employer is solely responsible for meeting the following data protection obligations:
+Consent and Notice
+The Employer must obtain meaningful and informed consent from applicants before or at the time of collecting their personal information, by providing a clear and accessible privacy notice.
+Purpose Limitation
+Collection of personal information must be limited to what is necessary for identified recruitment purposes. It may not be used or disclosed for any new purpose without obtaining fresh consent.
+Data Retention
+Personal information must not be retained for longer than is reasonably necessary. The Employer must have a policy for its secure deletion or anonymization.
+Applicant Rights
+The Employer must provide a clear process for applicants to exercise their rights to access, correct, and delete their personal information as required by applicable law.
+Cross-Border Transfers
+If personal information is transferred across provincial or national borders, the Employer must ensure the data remains protected to the standard required by the originating jurisdiction.
+7. Artificial Intelligence and Automated Decision-Making
+If the Employer uses any Artificial Intelligence (AI) or automated employment decision tools (AEDT) in its hiring process, the Employer is solely responsible for complying with all applicable laws. This includes:
+• Transparency and Disclosure: The Employer must disclose the use of AI in job postings where required by law, including Ontario (effective January 1, 2026). This disclosure must be clear and explain the general function of the AI tool.
+• Human Oversight: If a hiring decision is made exclusively through automated means, the Employer must inform the applicant and provide a mechanism for human review.
+• Non-Discrimination: The Employer is responsible for ensuring that any AI tools it uses do not result in unlawful discrimination on the basis of any protected characteristic.
+Enabled Talent does not control, audit, or take responsibility for any AI or automated tools used by employers in their own hiring processes.
+8. Accessibility and Accommodation
+The Employer is responsible for ensuring its own recruitment process meets the accessibility requirements of applicable Ontario and Canadian law, including AODA and the Ontario Human Rights Code. This includes:
+• Inclusive Language: Job postings must use inclusive language and focus on essential job requirements.
+• Accommodation Statement: Job postings must include a statement indicating that accommodations are available for applicants with disabilities upon request.
+• Accessible Process: The Employer must provide accessibility supports and accommodations at no cost to applicants throughout all stages of recruitment, selection, and assessment.
+The Platform provides accessible infrastructure as a baseline. The Employer's obligations under accessibility law are separate and independent of the Platform's own accessibility commitments.
+9. Intellectual Property
+By posting content on the Platform, you grant ENABLED HR LABS INC. a worldwide, non-exclusive, royalty-free license to display, reproduce, and promote your job posting. You warrant that you own or have the necessary permissions for all content, including logos and images, that you upload.
+10. Liability and Indemnity
+Enabled Talent is a technology intermediary and disclaims all liability related to employer hiring decisions, recruitment outcomes, applicant relationships, and employer compliance with applicable law.
+The Platform's liability is limited to the greater of five times the amount paid for promoted posts in the previous month or CAD $100. The Employer agrees to indemnify and hold harmless ENABLED HR LABS INC., its officers, directors, and employees from any claims, damages, or losses arising from the Employer's job postings, hiring practices, or failure to comply with applicable law.
+11. Termination and Updates
+Enabled Talent reserves the right to remove any job posting or suspend any account if these Terms are breached or applicable laws are violated. We may update these Terms periodically. Continued use of the Platform after updates constitutes acceptance of the revised Terms.
+12. Governing Law and Dispute Resolution
+These Terms shall be governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable therein. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of the Province of Ontario.
+13. Contact
+ENABLED HR LABS INC. (operating as Enabled Talent)
+Email: jeby@enabledtalent.com
+Website: enabledtalent.com
+`;

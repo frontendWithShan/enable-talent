@@ -1,0 +1,43 @@
+{
+  "name": "landing-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "supabase:check": "node scripts/verify-supabase-connection.mjs",
+    "supabase:smoke": "node scripts/smoke-supabase-core-schema.mjs"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.6",
+    "@supabase/ssr": "^0.10.0",
+    "@supabase/supabase-js": "^2.101.1",
+    "@tiptap/extension-bubble-menu": "^3.22.2",
+    "@tiptap/extension-floating-menu": "^3.22.2",
+    "@tiptap/extension-image": "^3.22.2",
+    "@tiptap/extension-link": "^3.22.2",
+    "@tiptap/extension-placeholder": "^3.22.2",
+    "@tiptap/html": "^3.22.2",
+    "@tiptap/react": "^3.22.2",
+    "@tiptap/starter-kit": "^3.22.2",
+    "framer-motion": "^12.29.2",
+    "isomorphic-dompurify": "^3.7.1",
+    "lucide-react": "^0.554.0",
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^25.0.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "baseline-browser-mapping": "^2.9.19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.0.10",
+    "tailwindcss": "^4",
+    "typescript": "^5.9.3"
+  }
+}

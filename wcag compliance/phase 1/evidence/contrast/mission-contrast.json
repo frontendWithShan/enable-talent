@@ -1,0 +1,1401 @@
+[
+  {
+    "testEngine": {
+      "name": "axe-core",
+      "version": "4.11.0"
+    },
+    "testRunner": {
+      "name": "axe"
+    },
+    "testEnvironment": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.0.0 Safari/537.36",
+      "windowWidth": 762,
+      "windowHeight": 428,
+      "orientationAngle": 0,
+      "orientationType": "landscape-primary"
+    },
+    "timestamp": "2026-02-18T01:00:18.281Z",
+    "url": "http://localhost:4173/mission",
+    "toolOptions": {
+      "runOnly": {
+        "type": "rule",
+        "values": [
+          "color-contrast"
+        ]
+      },
+      "reporter": "v1"
+    },
+    "inapplicable": [],
+    "passes": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#182434",
+                  "contrastRatio": 15.66,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 15.66"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Find your next job w...\" class=\"group inline-flex it...\" href=\"https://app.enabledt...\">",
+            "target": [
+              ".bg-\\[\\#182434\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffd071",
+                  "contrastRatio": 14.51,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 14.51"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Post a job on Enable...\" class=\"group inline-flex it...\" href=\"https://app.enabledt...\">",
+            "target": [
+              ".bg-\\[\\#FFD071\\]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#101828",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 17.74,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 17.74"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 id=\"partners-heading\" class=\"mt-2 mb-8 text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900\">Trusted by organizations building the future of work</h2>",
+            "target": [
+              "#partners-heading"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2>Our mission is to create a fair and inclusive job marketplace. </h2>",
+            "target": [
+              "section:nth-child(3) > h2"
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"relative overflow-hidden rounded-[28px] border border-[#F0E6CC] shadow-[0_22px_70px_rgba(24,59,76,0.08)] mission-hero\" aria-labelledby=\"mission-title\">",
+                    "target": [
+                      ".rounded-\\[28px\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h1 id=\"mission-title\" class=\"max-w-3xl text-center text-2xl font-bold leading-tight tracking-tight text-[#1A1A1A] sm:text-3xl md:text-[2.35rem]\">Where Ability Meets Opportunity</h1>",
+            "target": [
+              "#mission-title"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"relative overflow-hidden rounded-[28px] border border-[#F0E6CC] shadow-[0_22px_70px_rgba(24,59,76,0.08)] mission-hero\" aria-labelledby=\"mission-title\">",
+                    "target": [
+                      ".rounded-\\[28px\\]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-4 max-w-2xl text-center text-base leading-relaxed text-black sm:text-lg\">We connect talented people of all abilities with welcoming employers and provide the learning resources to help them thrive.</p>",
+            "target": [
+              ".mt-4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl\">Inclusive Success<br><span class=\"sm:ml-1\">Starts with a Conversation.</span></h2>",
+            "target": [
+              ".tracking-tight.lg\\:text-4xl"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"sm:ml-1\">Starts with a Conversation.</span>",
+            "target": [
+              ".sm\\:ml-1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mx-auto mt-12 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base\">Whether you're hiring, job-seeking, or building inclusion into your programs, we're here to help you turn purpose into progress.</p>",
+            "target": [
+              ".sm\\:text-base"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "18.0pt (24px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 class=\"text-xl font-bold sm:text-2xl\">Building Infrastructure<br class=\"hidden sm:block\"> for meaningful employment</h3>",
+            "target": [
+              "h3"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"mt-3 text-sm leading-relaxed text-slate-700\">Stay informed with cutting-edge AI insights, wellness innovation, and inclusive tech-driven hiring - connecting diverse talent with forward-thinking employers!</p>",
+            "target": [
+              ".max-w-xl > p"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-lg font-semibold text-slate-800\">Enabled Talent</span>",
+            "target": [
+              ".text-lg"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h4 class=\"text-sm font-bold  tracking-[0.18em] text-black\">Product</h4>",
+            "target": [
+              "div:nth-child(1) > h4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/fortalents\">Find Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"fortalents\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-xs text-left\">Career Coach</button>",
+            "target": [
+              "div:nth-child(1) > .space-y-1\\.5.mt-3 > li:nth-child(2) > .text-left.cursor-pointer[type=\"button\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/foremployers\">Enabled Jobs</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"foremployers\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/foremployers/agent\">Enabled AI Agent</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"agent\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/enableacademy\">Enabled Academy</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enableacademy\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/students\">For Educators</a>",
+            "target": [
+              "a[href$=\"students\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-xs text-left\">For NGOs</button>",
+            "target": [
+              "li:nth-child(7) > .text-left.cursor-pointer[type=\"button\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-xs text-left\">For Governments</button>",
+            "target": [
+              "li:nth-child(8) > .text-left.cursor-pointer[type=\"button\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h4 class=\"text-sm font-bold  tracking-[0.18em] text-black\">Case Studies</h4>",
+            "target": [
+              "div:nth-child(2) > h4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-xs text-left\">Durham</button>",
+            "target": [
+              "div:nth-child(2) > .space-y-1\\.5.mt-3 > li > .text-left.cursor-pointer[type=\"button\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h4 class=\"text-sm font-bold  tracking-[0.18em] text-black\">Countries</h4>",
+            "target": [
+              "div:nth-child(3) > h4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"https://www.enabledafrica.com/\">EnabledAfrica</a>",
+            "target": [
+              ".hover\\:underline.hover\\:text-slate-900[href$=\"enabledafrica.com/\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-xs text-left\">Spain</button>",
+            "target": [
+              "div:nth-child(3) > .space-y-1\\.5.mt-3 > li:nth-child(2) > .text-left.cursor-pointer[type=\"button\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h4 class=\"text-sm font-bold  tracking-[0.18em] text-black\">Resources</h4>",
+            "target": [
+              "div:nth-child(4) > h4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/blogs\">Blog</a>",
+            "target": [
+              "a[href$=\"blogs\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/faqs\">FAQs</a>",
+            "target": [
+              "a[href$=\"faqs\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h4 class=\"text-sm font-bold  tracking-[0.18em] text-black\">Company</h4>",
+            "target": [
+              "div:nth-child(5) > h4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/about-us\">About</a>",
+            "target": [
+              "a[href$=\"about-us\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" class=\"cursor-pointer hover:text-slate-900 hover:underline text-xs text-left\">Partners</button>",
+            "target": [
+              "div:nth-child(5) > .space-y-1\\.5.mt-3 > li:nth-child(2) > .text-left.cursor-pointer[type=\"button\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/careers\">Careers</a>",
+            "target": [
+              "a[href$=\"careers\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h4 class=\"text-sm font-bold  tracking-[0.18em] text-black\">Legal</h4>",
+            "target": [
+              "div:nth-child(6) > h4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/privacy-policy\">Privacy Policy</a>",
+            "target": [
+              "a[href$=\"privacy-policy\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/accessibility-policy\">Accessibility Policy</a>",
+            "target": [
+              "a[href$=\"accessibility-policy\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"relative w-full rounded-4xl bg-white/90 p-6 shadow-xl backdrop-blur sm:p-8 lg:p-10\">",
+                    "target": [
+                      ".bg-white\\/90"
+                    ]
+                  },
+                  {
+                    "html": "<footer class=\"min-h-screen bg-[#f7f4ed] text-slate-900 footer\" role=\"contentinfo\">",
+                    "target": [
+                      "footer"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"hover:text-slate-900 hover:underline text-xs\" href=\"/responsible-ai\">Responsible AI</a>",
+            "target": [
+              "a[href$=\"responsible-ai\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  }
+]

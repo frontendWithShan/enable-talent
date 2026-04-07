@@ -1,0 +1,92 @@
+﻿[
+    {
+        "route":  "/",
+        "file":  "home-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/about-us",
+        "file":  "about-us-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/accessibility-policy",
+        "file":  "accessibility-policy-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/blogs",
+        "file":  "blogs-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/blogs/sample-slug",
+        "file":  "blogs-slugs-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/careers",
+        "file":  "careers-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/careers/sample-id",
+        "file":  "careers-jobId-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/enableacademy",
+        "file":  "enableacademy-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/events",
+        "file":  "events-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/faqs",
+        "file":  "faqs-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/foremployers",
+        "file":  "foremployers-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/foremployers/agent",
+        "file":  "foremployers-agent-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/fortalents",
+        "file":  "fortalents-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/mission",
+        "file":  "mission-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/privacy-policy",
+        "file":  "privacy-policy-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/programs-awards",
+        "file":  "programs-awards-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/responsible-ai",
+        "file":  "responsible-ai-contrast.json",
+        "exit_code":  0
+    },
+    {
+        "route":  "/students",
+        "file":  "students-contrast.json",
+        "exit_code":  0
+    }
+]
