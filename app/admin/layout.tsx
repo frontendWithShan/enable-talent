@@ -9,6 +9,8 @@ const SHELLLESS_ADMIN_PATHS = new Set([
   "/admin/login",
   "/admin/forbidden",
   "/admin/accept-invite",
+  "/admin/forgot-password",
+  "/admin/reset-password",
 ]);
 
 export default function AdminLayout({ children }: { children: ReactNode }) {

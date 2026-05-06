@@ -195,6 +195,15 @@ function AdminLoginPageContent() {
             </button>
           </form>
 
+          <div className="mt-4 text-center">
+            <Link
+              href="/admin/forgot-password"
+              className="text-sm font-medium text-slate-700 underline hover:text-slate-900"
+            >
+              Forgot password?
+            </Link>
+          </div>
+
           <p className="mt-6 text-center text-xs leading-5 text-slate-700">
             Admin access is invitation-based and restricted to authorized staff.
           </p>

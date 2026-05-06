@@ -54,6 +54,15 @@ export default function TeamManagementClient({
   const [deleteError, setDeleteError] = useState<string | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  const [confirmRoleChange, setConfirmRoleChange] = useState<{
+    member: TeamMemberRecord;
+    newRole: AdminRole;
+  } | null>(null);
+  const [optimisticRoles, setOptimisticRoles] = useState<
+    Record<string, AdminRole>
+  >({});
+  const [isChangingRole, setIsChangingRole] = useState(false);
+
   const [showInvitePanel, setShowInvitePanel] = useState(false);
   const [inviteEmail, setInviteEmail] = useState("");
   const [inviteFullName, setInviteFullName] = useState("");
@@ -61,6 +70,31 @@ export default function TeamManagementClient({
   const [inviteError, setInviteError] = useState<string | null>(null);
   const [inviteSuccess, setInviteSuccess] = useState(false);
   const [isInviting, setIsInviting] = useState(false);
+
+  async function handleConfirmRoleChange() {
+    if (!confirmRoleChange) return;
+    const { member, newRole } = confirmRoleChange;
+
+    setIsChangingRole(true);
+    setOptimisticRoles((prev) => ({ ...prev, [member.id]: newRole }));
+
+    const payload = new FormData();
+    payload.set("id", member.id);
+    payload.set("role", newRole);
+
+    try {
+      await updateRoleAction(payload);
+    } catch {
+      setOptimisticRoles((prev) => {
+        const next = { ...prev };
+        delete next[member.id];
+        return next;
+      });
+    }
+
+    setIsChangingRole(false);
+    setConfirmRoleChange(null);
+  }
 
   async function handleDelete() {
     if (!confirmDelete) return;
@@ -290,6 +324,8 @@ export default function TeamManagementClient({
             <tbody className="divide-y divide-slate-200">
               {members.map((member) => {
                 const isSelf = member.id === currentUserId;
+                const displayedRole =
+                  optimisticRoles[member.id] ?? member.role;
 
                 return (
                   <tr key={member.id} className="hover:bg-slate-50">
@@ -327,23 +363,46 @@ export default function TeamManagementClient({
                           {formatAdminRoleLabel(member.role)}
                         </span>
                       ) : (
-                        <form action={updateRoleAction}>
-                          <input type="hidden" name="id" value={member.id} />
+                        <div
+                          className={`group relative inline-flex items-center rounded-full ${ROLE_COLORS[displayedRole]}`}
+                        >
                           <select
-                            name="role"
-                            defaultValue={member.role}
+                            aria-label={`Change role for ${member.fullName}`}
+                            value={displayedRole}
+                            disabled={isChangingRole}
                             onChange={(e) => {
-                              e.currentTarget.form?.requestSubmit();
+                              const newRole = e.target.value as AdminRole;
+                              if (newRole !== displayedRole) {
+                                setConfirmRoleChange({ member, newRole });
+                              }
                             }}
-                            className="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-medium text-slate-900 focus:border-slate-950 focus:outline-none focus:ring-2 focus:ring-slate-950"
+                            className="cursor-pointer appearance-none rounded-full bg-transparent py-1 pl-2.5 pr-7 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-current focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
                           >
                             {ADMIN_ROLES.map((r) => (
-                              <option key={r} value={r}>
+                              <option
+                                key={r}
+                                value={r}
+                                className="bg-white text-slate-900"
+                              >
                                 {formatAdminRoleLabel(r)}
                               </option>
                             ))}
                           </select>
-                        </form>
+                          <svg
+                            aria-hidden="true"
+                            className="pointer-events-none absolute right-2 h-3 w-3 opacity-50 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            strokeWidth={2.5}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </div>
                       )}
                     </td>
 
@@ -425,6 +484,61 @@ export default function TeamManagementClient({
           </div>
         )}
       </div>
+
+      {/* Role change confirmation modal */}
+      {confirmRoleChange && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="role-modal-title"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4"
+        >
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl">
+            <h2
+              id="role-modal-title"
+              className="text-base font-semibold text-slate-900"
+            >
+              Change role?
+            </h2>
+            <p className="mt-2 text-sm text-slate-600">
+              <span className="font-medium text-slate-900">
+                {confirmRoleChange.member.fullName}
+              </span>{" "}
+              ({confirmRoleChange.member.email}) will be changed from{" "}
+              <span
+                className={`inline-flex rounded-full px-2 py-0.5 text-xs font-semibold ${ROLE_COLORS[confirmRoleChange.member.role]}`}
+              >
+                {formatAdminRoleLabel(confirmRoleChange.member.role)}
+              </span>{" "}
+              to{" "}
+              <span
+                className={`inline-flex rounded-full px-2 py-0.5 text-xs font-semibold ${ROLE_COLORS[confirmRoleChange.newRole]}`}
+              >
+                {formatAdminRoleLabel(confirmRoleChange.newRole)}
+              </span>
+              .
+            </p>
+            <div className="mt-6 flex justify-end gap-3">
+              <button
+                type="button"
+                disabled={isChangingRole}
+                onClick={() => setConfirmRoleChange(null)}
+                className="rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 disabled:opacity-50"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                disabled={isChangingRole}
+                onClick={handleConfirmRoleChange}
+                className="rounded-xl bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {isChangingRole ? "Updating..." : "Yes, change role"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Deactivate confirmation modal */}
       {confirmDeactivate && (

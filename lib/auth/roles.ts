@@ -20,7 +20,12 @@ export type AdminNavItem = {
   label: string;
 };
 
-const ADMIN_PUBLIC_PATHS = ["/admin/login", "/admin/forbidden"] as const;
+const ADMIN_PUBLIC_PATHS = [
+  "/admin/login",
+  "/admin/forbidden",
+  "/admin/forgot-password",
+  "/admin/reset-password",
+] as const;
 
 const ADMIN_ROUTE_ACCESS = [
   {
@@ -62,6 +67,10 @@ const ADMIN_ROUTE_ACCESS = [
   {
     allowedRoles: ["super_admin"] as const,
     prefix: "/admin/team",
+  },
+  {
+    allowedRoles: ["super_admin", "editor", "guest_writer"] as const,
+    prefix: "/admin/account",
   },
   {
     allowedRoles: ["super_admin"] as const,
@@ -109,6 +118,11 @@ export const ADMIN_NAV_ITEMS: readonly AdminNavItem[] = [
     allowedRoles: ["super_admin"],
     href: "/admin/team",
     label: "Team",
+  },
+  {
+    allowedRoles: ["super_admin", "editor", "guest_writer"],
+    href: "/admin/account",
+    label: "Account",
   },
 ] as const;
 
