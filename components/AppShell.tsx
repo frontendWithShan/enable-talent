@@ -12,7 +12,7 @@ type AppShellProps = {
   children: ReactNode;
 };
 
-const STANDALONE_PATHS = new Set(["/role-selection"]);
+const STANDALONE_PATHS = new Set(["/role-selection", "/"]);
 
 export default function AppShell({ children }: AppShellProps) {
   const pathname = usePathname();
