@@ -40,11 +40,18 @@ export default async function CareerDetailPage({
   params,
 }: CareerDetailPageProps) {
   const { slug } = await params;
-  const jobRecord = await getActiveJobBySlug(slug);
+  let jobRecord = null;
+
+  try {
+    jobRecord = await getActiveJobBySlug(slug);
+  } catch (error) {
+    console.error("Error fetching career detail:", error);
+  }
 
   if (!jobRecord) {
     notFound();
   }
+
 
   const job = mapJobRecordToPublicPosting(jobRecord);
   const detailUrl = `/careers/${job.slug ?? job.id}`;

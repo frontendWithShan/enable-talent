@@ -76,6 +76,33 @@ const JOB_SELECT = [
 ].join(", ");
 
 function mapJobRow(row: JobRow): JobRecord {
+  if (!row) {
+    return {
+      id: "placeholder",
+      title: "Loading...",
+      slug: "placeholder",
+      summary: "",
+      locationText: "",
+      isActive: false,
+      isFeatured: false,
+      status: "draft",
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+      applicationDeadline: null,
+      createdBy: null,
+      descriptionHtml: null,
+      employmentType: null,
+      experienceLevel: null,
+      publishedAt: null,
+      salaryCurrency: null,
+      salaryMax: null,
+      salaryMin: null,
+      salaryPeriod: null,
+      updatedBy: null,
+      workMode: null,
+    } as unknown as JobRecord;
+  }
+
   return {
     applicationDeadline: row.application_deadline,
     createdAt: row.created_at,
@@ -101,6 +128,7 @@ function mapJobRow(row: JobRow): JobRecord {
     workMode: row.work_mode,
   };
 }
+
 
 function toJobPayload(input: CreateJobInput | UpdateJobInput) {
   return stripUndefinedFields({

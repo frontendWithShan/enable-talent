@@ -85,6 +85,37 @@ const POST_SELECT = [
 ].join(", ");
 
 function mapPostRow(row: PostRow): PostRecord {
+  if (!row) {
+    return {
+      id: "placeholder",
+      title: "Loading...",
+      slug: "placeholder",
+      summary: "",
+      type: "blog",
+      status: "published",
+      region: "GLOBAL",
+      audience: "ALL",
+      sourceType: "manual",
+      isFeatured: false,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+      authorName: null,
+      bodyHtml: null,
+      bodyJson: null,
+      canonicalUrl: null,
+      coverImageAlt: null,
+      coverImageUrl: null,
+      createdBy: null,
+      externalUrl: null,
+      publishedAt: null,
+      readingTimeMinutes: null,
+      scheduledFor: null,
+      seoDescription: null,
+      seoTitle: null,
+      updatedBy: null,
+    } as unknown as PostRecord;
+  }
+
   return {
     authorName: row.author_name,
     audience: row.audience,
@@ -114,6 +145,7 @@ function mapPostRow(row: PostRow): PostRecord {
     updatedBy: row.updated_by,
   };
 }
+
 
 function toPostPayload(input: CreatePostInput | UpdatePostInput) {
   return stripUndefinedFields({

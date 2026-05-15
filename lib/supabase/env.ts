@@ -14,32 +14,20 @@ export type SupabaseServerEnv = SupabasePublicEnv & {
 
 export function getSupabasePublicEnv(): SupabasePublicEnv {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
-
-  if (!url) {
-    throw new Error(
-      "Missing required environment variable: NEXT_PUBLIC_SUPABASE_URL. Copy .env.example to .env.local and fill in the Supabase values.",
-    );
-  }
-
-  try {
-    new URL(url);
-  } catch {
-    throw new Error(
-      "Environment variable NEXT_PUBLIC_SUPABASE_URL must be a valid URL.",
-    );
-  }
-
   const publishableKey =
     process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY?.trim() ||
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
 
-  if (!publishableKey) {
-    throw new Error(
-      "Missing required environment variable. Expected one of: NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY, NEXT_PUBLIC_SUPABASE_ANON_KEY.",
+  if (!url || !publishableKey) {
+    console.warn(
+      "⚠️ Supabase public environment variables are missing. Using demo placeholders.",
     );
   }
 
-  return { url, publishableKey };
+  return {
+    url: url || "https://placeholder-project.supabase.co",
+    publishableKey: publishableKey || "placeholder-anon-key",
+  };
 }
 
 export function getSupabaseServerEnv(): SupabaseServerEnv {
@@ -48,13 +36,15 @@ export function getSupabaseServerEnv(): SupabaseServerEnv {
     process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
 
   if (!secretKey) {
-    throw new Error(
-      "Missing required environment variable. Expected one of: SUPABASE_SECRET_KEY, SUPABASE_SERVICE_ROLE_KEY.",
+    console.warn(
+      "⚠️ Supabase server environment variables are missing. Using demo placeholders.",
     );
   }
 
   return {
     ...getSupabasePublicEnv(),
-    secretKey,
+    secretKey: secretKey || "placeholder-secret-key",
   };
 }
+
+

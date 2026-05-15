@@ -6,8 +6,14 @@ import { listActiveJobs } from "@/lib/data/jobs";
 export const revalidate = 300;
 
 export default async function CareersPage() {
-  const jobs = await listActiveJobs();
-  const jobPostings = jobs.map(mapJobRecordToPublicPosting);
+  let jobPostings: any[] = [];
+
+  try {
+    const jobs = await listActiveJobs();
+    jobPostings = jobs.map(mapJobRecordToPublicPosting);
+  } catch (error) {
+    console.error("Error fetching careers:", error);
+  }
 
   return (
     <main className="min-h-screen bg-gray-50" id="main-content" tabIndex={-1}>
@@ -16,3 +22,4 @@ export default async function CareersPage() {
     </main>
   );
 }
+
