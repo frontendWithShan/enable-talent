@@ -83,7 +83,7 @@ const NewFooter = () => {
             <ul className="space-y-3 md:space-y-4 text-slate-400 font-medium">
               <li>{renderLink("For Talent", "/fortalents")}</li>
               <li>{renderLink("For Employers", "/foremployers")}</li>
-              <li>{renderLink("For Educators")}</li>
+              <li>{renderLink("For Universities")}</li>
               <li>{renderLink("For Governments")}</li>
             </ul>
           </div>

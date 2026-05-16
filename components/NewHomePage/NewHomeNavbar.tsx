@@ -75,6 +75,14 @@ const NewHomeNavbar = () => {
     setIsGlobalsOpen(false);
   };
 
+  const openServiceComingSoon = (service: string) => {
+    setComingSoonContent({
+      title: `${service} - Coming Soon`,
+      description: `We are currently developing specialized solutions for ${service.toLowerCase()}. This feature will be available soon.`
+    });
+    setIsOpen(false);
+  };
+
   return (
     <div className="absolute left-0 right-0 w-full z-50 px-4 md:px-6" style={{ top: '30px' }}>
       <nav
@@ -108,8 +116,18 @@ const NewHomeNavbar = () => {
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
-            <a href="#nh-howitworks-panel-universities" className="text-[#111827] hover:text-[#E96623] font-medium text-[14px] transition-colors">For Universities</a>
-            <a href="#nh-howitworks-panel-governments" className="text-[#111827] hover:text-[#E96623] font-medium text-[14px] transition-colors">For Governments</a>
+            <button 
+              onClick={() => openServiceComingSoon("Universities")}
+              className="text-[#111827] hover:text-[#E96623] font-medium text-[14px] transition-colors cursor-pointer bg-transparent border-none p-0"
+            >
+              For Universities
+            </button>
+            <button 
+              onClick={() => openServiceComingSoon("Governments")}
+              className="text-[#111827] hover:text-[#E96623] font-medium text-[14px] transition-colors cursor-pointer bg-transparent border-none p-0"
+            >
+              For Governments
+            </button>
           </div>
         </div>
 
@@ -197,8 +215,18 @@ const NewHomeNavbar = () => {
             >
               <div className="flex flex-col gap-2">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-2">Navigation</span>
-                <a href="#nh-howitworks-panel-universities" onClick={() => setIsOpen(false)} className="text-[#111827] font-bold text-lg py-3 px-2 border-b border-slate-50">For Universities</a>
-                <a href="#nh-howitworks-panel-governments" onClick={() => setIsOpen(false)} className="text-[#111827] font-bold text-lg py-3 px-2 border-b border-slate-50">For Governments</a>
+                <button 
+                  onClick={() => openServiceComingSoon("Universities")}
+                  className="text-left text-[#111827] font-bold text-lg py-3 px-2 border-b border-slate-50 bg-transparent"
+                >
+                  For Universities
+                </button>
+                <button 
+                  onClick={() => openServiceComingSoon("Governments")}
+                  className="text-left text-[#111827] font-bold text-lg py-3 px-2 border-b border-slate-50 bg-transparent"
+                >
+                  For Governments
+                </button>
               </div>
 
               <div className="flex flex-col gap-2">
