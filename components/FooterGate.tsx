@@ -1,5 +1,5 @@
-import UnifiedFooter from "@/components/footer/UnifiedFooter";
+import NewFooter from "@/components/NewHomePage/sections/NewFooter";
 
 export default function FooterGate() {
-  return <UnifiedFooter />;
+  return <NewFooter />;
 }

@@ -25,7 +25,7 @@ export default function AppShell({ children }: AppShellProps) {
       <RouteChangeFocus />
       <ScrollToTop />
       {children}
-      {isStandalonePage ? null : <FooterGate />}
+      {isAdminPath ? null : <FooterGate />}
     </>
   );
 }

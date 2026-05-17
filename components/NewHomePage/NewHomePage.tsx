@@ -2,15 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import Hero from '@/components/NewHomePage/sections/Hero';
-import TrustLogos from '@/components/NewHomePage/sections/TrustLogos';
+import SectionPartners from '@/components/HomePage/SectionPartners';
 import Solutions from '@/components/NewHomePage/sections/Solutions';
 import HowItWorks from '@/components/NewHomePage/sections/HowItWorks';
 import CTA from '@/components/NewHomePage/sections/CTA';
 import TrustFoundation from '@/components/NewHomePage/sections/TrustFoundation';
-import PartnersScroll from '@/components/NewHomePage/sections/PartnersScroll';
+import EmployersForwardThinking from '@/components/Employers/EmployersForwardThinking';
 import FinalCTA from '@/components/NewHomePage/sections/FinalCTA';
 import NewHomeNavbar from '@/components/NewHomePage/NewHomeNavbar';
-import NewFooter from '@/components/NewHomePage/sections/NewFooter';
 import ScrollButtons from '@/components/NewHomePage/ui/ScrollButtons';
 
 export default function NewHomePage() {
@@ -45,15 +44,14 @@ export default function NewHomePage() {
 
       <main id="main-content">
         <Hero />
-        <TrustLogos />
+        <SectionPartners heading="Trusted Partners" tagline="Trusted by organizations building the future of work" />
         <Solutions />
         <HowItWorks />
-        <PartnersScroll />
+        <EmployersForwardThinking />
         <FinalCTA />
         <CTA />
         <TrustFoundation />
       </main>
-      <NewFooter />
       <ScrollButtons />
     </div>
   );

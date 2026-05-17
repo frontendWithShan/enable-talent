@@ -30,7 +30,7 @@ export default function SectionPartners({
       aria-labelledby="partners-heading"
       className="bg-white py-12 sm:py-16 lg:py-20"
     >
-      <div className="mx-auto max-w-360 px-4 sm:px-6 lg:px-8 text-center">
+      <div className="mx-auto max-w-[1920px]  px-4 sm:px-6 lg:px-8 text-center">
         {/* Pill label */}
         {heading && (
           <p className="mb-8 inline-flex items-center rounded-full  bg-gray-200 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-gray-800">
@@ -41,9 +41,8 @@ export default function SectionPartners({
         {/* Main heading */}
         <h2
           id="partners-heading"
-          className={`${
-            heading ? "mt-6" : "mt-2"
-          } mb-8 text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900`}
+          className={`${heading ? "mt-6" : "mt-2"
+            } mb-8 text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900`}
         >
           {tagline}
         </h2>

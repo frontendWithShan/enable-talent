@@ -18,19 +18,6 @@ type SectionContent = {
   imagePosition: "left" | "right";
 };
 
-function PrimaryCta(): JSX.Element {
-  return (
-    <Link
-      href="https://app.enabledtalent.com/signup"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Join Enabled Talent as a job seeker"
-      className="inline-flex"
-    >
-      <FancyButton label="Join Enabled Talent" as="span" />
-    </Link>
-  );
-}
 
 function SectionCard({
   section,
@@ -156,9 +143,6 @@ export default function TalentHero(): JSX.Element {
                 A Smarter Way to Get Hired
               </h1>
 
-              <div className="mt-6">
-                <PrimaryCta />
-              </div>
             </div>
           </div>
         </div>

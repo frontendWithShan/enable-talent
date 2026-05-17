@@ -39,7 +39,7 @@ export default function EmployersForwardThinking(): JSX.Element {
       className="px-4 sm:px-6 lg:px-8 pb-20"
       suppressHydrationWarning
     >
-      <div className="mx-auto mt-20 flex max-w-7xl justify-center text-center">
+      <div className="mx-auto mt-20 flex max-w-[1920px] justify-center text-center">
         <div className="text-3xl font-bold tracking-tight text-[#1A202C]">
           <h2 id="forward-thinking-heading" className="pt-6">
             AS SEEN IN
